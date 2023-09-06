@@ -1,0 +1,63 @@
+html {font-family: Arial, Helvetica, sans-serif;}
+h1, p { margin-top: 0; }
+body { background-color: #b6ccdd; }
+a:hover {font-style: italic}
+
+/* hide scrollbars */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+.bodycontainer {
+  margin: auto;
+  width: 800px;
+  height: 800px;
+}
+
+.maincontainer {
+  background-color: #e0e9f0;
+  height: 500px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.misccontainer {
+  display: grid;
+  background-color: #e0e9f0;
+  width: 830px;
+  height: auto;
+}
+aside {
+  background-image: url("https://doqmeat.neocities.org/!g/bg/other/grid-blue.png");
+  width: 25%;
+  margin-right: 15px; /* the gap between the 2 pages*/
+  padding: 15px;
+  border-radius: 15px 0 0 15px;
+  overflow-y: auto;
+}
+
+main {
+  background-image: url("https://doqmeat.neocities.org/!g/bg/other/grid-blue.png");
+  width: 50%;
+  padding: 15px;
+  border-radius: 0 15px 15px 0;
+  overflow-y: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  gap: 10px;
+}
+
+nav > a {
+  background-color: #b6ccdd;
+  padding: 10px 20px;
+  text-align: right;
+  border-radius: 0 15px 15px 0;
+}
