@@ -1,113 +1,81 @@
-p, h1, h2, h3, h4, h5, h6 {margin-top: 0;}
-a:hover { font-style: italic;}
-a {color: #1a5fb4;}
-a:visited {color:#813d9c;}
-a:active {color:#f66151}
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
+/* Link styling */
+a:hover { text-decoration: underline;}
+a {text-decoration: none; color: #3363A1;}
+
+h1,h2,h3,h4,h5,h6,p {margin-top: 0; margin-bottom: 10px;}
+
 
 body {
-  background-color: #8C7F8D;
+  background-image: url("/images/grid.png");
   font-family: Arial, Helvetica, sans-serif;
-  color: #393646;
+  color: #1C232A;
+}
+.page {
+  max-width: 600px; margin: auto;
 }
 
-  .bodycontainer {
-    height: auto; max-width: 800px;
-    margin: 10px auto 0;
-    display: flex; gap: 10px;
-  }
+    /* Header */
+    header { margin-bottom: 10px; }
+      h1 {margin-bottom: 0;}
+      /* Navigation bar */
+      .headernav > ul { 
+        background-color: #9AC8F3;
+        list-style: none; padding: 0; margin: 0;
+        display: flex;
+        border: 2px dotted #759bcc;
+      }
+        .headernav > ul > li {
+          border-right: 2px solid #FAF9F8;
+        }
+          .headernav > ul > li > a:hover {
+            background-color: #86B7E5;
+            border-right: 2px dotted #759bcc;
+            border-left: 2px dotted #759bcc;
+          }
+          .headernav > ul > li:nth-child(1) > a:hover {
+            border-left: 2px solid transparent;
+          }
+          .headernav > ul > li > a {
+            padding: 8px 16px;
+            border: 2px solid transparent;
+            display: inline-block;
+          }
 
-    main { width: auto; }
-      main > section { 
+    /* Body */
+    .body {
+      display: flex; gap: 10px; width: 100%;
+    }
+
+      /* Main content */
+      main {
+        width: auto; order: 0; flex-grow: 1;
+      } 
+        /* Sections */
+        main > section { 
+          background-color: #FAF9F8;
+          margin-bottom: 10px;
+          padding: 10px 10px 0;
+          border: 2px dotted #d5dae1;
+          }
+
+      /* Side content */
+      .sidebox {
+        width: 25%; flex-shrink: 0; order: 1; 
+        background-color: #FAF9F8; 
         padding: 10px; margin-bottom: 10px;
-        background-image: url("/images/grid.png");
+        border: 2px dotted #d5dae1;
       }
-    
-    .sidebox { width: 40%; flex-shrink:0;}
-
-      /* Navigation sidebox*/
-      .sidemain {
-        width: auto; padding: 10px;
-        background-image: url("/images/grid.png");
-        position: -webkit-sticky; position: sticky;
-        top: 10px; z-index:1;
-      }
-        /* Navigation buttons */
-        .sidemain > nav {
-          display: flex; flex-wrap: wrap;
-          gap: 10px;
-        }
-        .sidemain > nav > a {
-          padding: 10px 20px;
-          border-radius: 20px;
-        }
-          /* And lots and colors */
-          .sidemain > nav > a:nth-child(1) { background-color: #f3baaf; }
-          .sidemain > nav > a:nth-child(2) { background-color: #f3d1a5; }
-          .sidemain > nav > a:nth-child(3) { background-color: #f7e797; }
-          .sidemain > nav > a:nth-child(4) { background-color: #d0e5a4; }
-          .sidemain > nav > a:nth-child(5) { background-color: #bee2ef; }
-          .sidemain > nav > a:nth-child(6) { background-color: #eec9ec; }
-
-        /* Other elements on the side that are not the nav menu */
-        .sidetrinkets > * {
-          position: absolute;
-          padding: 10px;
-          width: auto;
+        /* Navigation bar */
+        .sidebox  > nav > ul {
+          list-style: none;
+          padding: 5px; margin: 0 0 0 15px;
         }
 
-          /* Updates box */
-          .sideupdates {
-            background-image: url("/images/grid.png");
-            top: 500px;
-            height: 150px;
-          }
-            .sideupdates > ul {
-              list-style-type: none;
-              margin: 0; padding-left: 0;
-            }
-
-          /* Chat box */
-          .cbox { 
-            padding: 0; 
-            top: 250px;
-            border: none;
-          }
-
-          /* Sticky note template */
-          .stickynotes { top: 750px; }
-          .stickynotes > * {
-              position: absolute;
-              padding: 20px 10px 10px;
-              width: 140px; height: 140px;
-            }
-          .fa-thumbtack {
-              color: #584E5F;
-              position: absolute;
-              margin: 0;
-              padding: 0;
-            }
-
-            /* Sticky Notes */
-            .stickynote1 {
-              top: 0;
-              rotate: -10deg;
-              background-color: #f6e8c5;
-            }
-              .stickynote1 > .fa-thumbtack {
-                  rotate: 30deg;
-                  left: 70px; bottom: 150px;
-              }
-
-            .stickynote2 {
-              top: 140px; left: 140px;
-              rotate: 10deg;
-              background-color: #f6d7d7;
-            }
-              .stickynote2 > .fa-thumbtack {
-                  rotate: -20deg;
-                  left: 55px; bottom: 155px;
-                }
+    /* Footer */
+    footer {
+      background-color: #9AC8F3; 
+      padding: 10px;
+      border: 2px dotted #759bcc;
+    }
+      footer > i {color: #3363A1;}
+      footer > p {float: right;}
