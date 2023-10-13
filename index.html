@@ -1,65 +1,155 @@
+<!-- What're you doing here? -->
+
 <!DOCTYPE html>
 <html lang="en">
   
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" type="image/x-icon" href="images/favicon.gif">
-    <title>index.html - snipchu.neocities.org</title>
-    <script src="https://kit.fontawesome.com/88f56cb0fc.js" crossorigin="anonymous"></script>
-    
+    <title>snipchu</title>
+    <style>
+      h1,h2,h3,h4,h5,h6 {margin: 0 0 10px;}
+      p {margin: 0 0 10px;}
+      a {color: #7796A1;}
+
+      .nobullets {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* CSS- hierarchical order */
+
+      body {
+        background-image: url("/images/griddark.png");
+        color: #181615;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #page-container {
+        margin: auto;
+        max-width: 600px;
+      }
+
+        header { margin-bottom: 20px; }
+          h1 { text-align: center; margin: 0 0 5px; }
+          header > nav > ul {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+          }
+            header > nav > ul > li {
+              font-size: 20px;
+            }
+
+        #body-container {
+          display: flex;
+          gap: 10px;
+        }
+          main {
+            width: 70%;
+            background-color: #5E5855;
+            padding: 10px 10px 0 10px;
+          }
+
+          #body-sidebar {
+            flex-grow: 1;
+            width: auto;
+          }
+            #body-sidebar > * {margin-bottom: 10px;}
+              #buttongroup {
+                display: flex;
+                flex-wrap: nowrap; gap: 5px;
+              }
+                #buttongroup > textarea {
+                  resize: none;
+                  width: 50px;
+                  flex-grow: 1;
+                }
+
+            #pagenav > nav > ul { padding-left: 20px; }
+
+            #taglist > ul {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 5px;
+            }
+              #taglist > ul > li {
+                padding: 5px 10px;
+                background-color: #7796A1;
+                border-radius: 5px;
+              }
+                #taglist > ul > li > a {
+                  color: #FAF7F5;
+                }
+    </style>
   </head>
   
-  <body>
-    <div class="page">
-      
-      <header>
-        <h1><a href="https://snipchu.neocities.org">https://snipchu.neocities.org</a></h1>
-        <nav class="headernav"><ul>
-          <li><a href="/index.html">index</a></li>
-          <li><a href="/about.html">about</a></li>
-          <li><a href="/blog.html">blog</a></li>
-          <li><a href="/media.html">media</a></li>
-          <li><a href="/siteinfo.html">site info</a></li>
-        </ul></nav>
-      </header>
-      
-      <div class="body">
-        <aside class="sidebox">
-          <h3>Toolbar</h3>
-          <nav><ul>
-            <li>No links yet. Maybe check another page?</li>
-          </ul></nav>
+  <body><div id="page-container">
 
-          <a href="https://cloverbell.neocities.org/"><img src="https://cloverbell.neocities.org/materials/decor/hotairballoon.webp" style="width: 100%; margin-top: 50px;"></a>
-        </aside>
-        <main>
-          <section>
-            <h2>Welcome to snipchu.neocities.org!</h2>
-            <p>I'm Nicholas (Nick) and this is my corner of the internet. Here you'll find all my projects, blog entries, and a broken page or two. Feel free to look around.</p>
-            <p>This website is always a work in progress (mobile support coming soon), so don't hesitate to reach out to me via chatbox if you find any bugs!</p>
-          </section>
+    <header>
+      <h1>snipchu.neocities.org</h1>
+      <nav><ul class="nobullets">
+        <li><a href="/index.html">index</a></li>
+        <li><a href="/about.html">about</a></li>
+        <li><a href="/blog.html">blog</a></li>
+        <li><a href="/creations.html">creations</a></li>
+        <li><a href="/site.html">site</a></li>
+      </ul></nav>
+    </header>
 
-          <section>
-            <h2>What is this website about?</h2>
-            <p>snipchu.neocities.org is basically a time capsule for me to document my life and mess around with HTML and CSS. I wanted to be able to express myself fully without using social media. I'm also a huge fan of the indie web and neocities was no exception.</p>
-          </section>
-          
-        </main>
+    <div id="body-container">
 
-      </div>
-      
-      <footer>
-        <a href="https://github.com/snipchu" aria-label="Go to my Github page"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.tumblr.com/snipchu" aria-label="Go to my Tumblr page"><i class="fa-brands fa-tumblr"></i></a>
-        <i class="fa-brands fa-discord" title="snipchu"></i>
-        <a href="https://www.youtube.com/channel/UCq20PqeeBEx02ZusA6LP7jQ" aria-label="Go to my Youtube page"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://replit.com/@snipchu" aria-label="Go to my Repl.it page"><i class="fa-solid fa-code"></i></a>
+      <!-- Main section of the website -->
+      <main>
         
-        <p>© snipchu 2023</p>
-      </footer>
+        <section>
+          <h2>section-0001</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.</p>
+        </section>
+
+        <section>
+          <h2>section-0001</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.</p>
+        </section>
+        
+      </main>
+
+      <!-- Sidebar -->
+      <aside id="body-sidebar">
+        <!-- Button link -->
+        <div id="buttongroup">
+          <img src="/images/button.gif">
+          <textarea readonly disabled>
+            <a href=""><img src=""></a>
+          </textarea>
+        </div>
+        
+        <hr>
+        
+        <!-- Navigation -->
+          <div id="pagenav">
+            <h3>Navigation</h3>
+            <nav><ul class="nobullets">
+              <li><a href="">navlink1</a></li>
+              <li><a href="">navlink2</a></li>
+              <li><a href="">navlink3</a></li>
+            </ul></nav>
+          </div>
+
+        <hr>
+        
+        <!-- Tags -->
+        <nav id="taglist"><ul class="nobullets">
+          <li><a href="">#tag1</a></li>
+          <li><a href="">#tag2</a></li>
+          <li><a href="">#tag3</a></li>
+        </ul></nav>
+        
+      </aside>
       
     </div>
-  </body>
+    
+  </div></body>
+  
 </html>
