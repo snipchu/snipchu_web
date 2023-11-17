@@ -1,155 +1,83 @@
-<!-- What're you doing here? -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
   
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.gif">
-    <title>snipchu</title>
-    <style>
-      h1,h2,h3,h4,h5,h6 {margin: 0 0 10px;}
-      p {margin: 0 0 10px;}
-      a {color: #7796A1;}
-
-      .nobullets {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      /* CSS- hierarchical order */
-
-      body {
-        background-image: url("/images/griddark.png");
-        color: #181615;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      #page-container {
-        margin: auto;
-        max-width: 600px;
-      }
-
-        header { margin-bottom: 20px; }
-          h1 { text-align: center; margin: 0 0 5px; }
-          header > nav > ul {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-          }
-            header > nav > ul > li {
-              font-size: 20px;
-            }
-
-        #body-container {
-          display: flex;
-          gap: 10px;
-        }
-          main {
-            width: 70%;
-            background-color: #5E5855;
-            padding: 10px 10px 0 10px;
-          }
-
-          #body-sidebar {
-            flex-grow: 1;
-            width: auto;
-          }
-            #body-sidebar > * {margin-bottom: 10px;}
-              #buttongroup {
-                display: flex;
-                flex-wrap: nowrap; gap: 5px;
-              }
-                #buttongroup > textarea {
-                  resize: none;
-                  width: 50px;
-                  flex-grow: 1;
-                }
-
-            #pagenav > nav > ul { padding-left: 20px; }
-
-            #taglist > ul {
-              display: flex;
-              flex-wrap: wrap;
-              gap: 5px;
-            }
-              #taglist > ul > li {
-                padding: 5px 10px;
-                background-color: #7796A1;
-                border-radius: 5px;
-              }
-                #taglist > ul > li > a {
-                  color: #FAF7F5;
-                }
-    </style>
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="images/favicon.gif">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <title>nikula on the net!</title>
   </head>
   
-  <body><div id="page-container">
+  <body><div class="body-container">
 
     <header>
-      <h1>snipchu.neocities.org</h1>
-      <nav><ul class="nobullets">
-        <li><a href="/index.html">index</a></li>
-        <li><a href="/about.html">about</a></li>
-        <li><a href="/blog.html">blog</a></li>
-        <li><a href="/creations.html">creations</a></li>
-        <li><a href="/site.html">site</a></li>
-      </ul></nav>
+      <h1>nikula on the net!</h1>
+      <nav class="header-nav">
+        <a href="">index</a>
+        <a href="">about me</a>
+        <a href="">blog</a>
+        <a href="">projects</a>
+        <a href="">the site</a>
+      </nav>
     </header>
 
-    <div id="body-container">
-
-      <!-- Main section of the website -->
+    <div class="main-content">
+      
       <main>
-        
-        <section>
-          <h2>section-0001</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.</p>
+        <section class="section-main" id="landing">
+          <h2>Landing</h2>
+
+          <div class="section-body">
+            <p>Welcome to <em>nikula on the net!</em></p>
+            <p>My name is Nicholas and this is my little site on the world wide web. Nice to meet you!</p>
+            <p>Oh, also, this website is mobile first and uses semantic tags. Let's make the web accessible to anybody and everybody!</p>
+            <h3>Why did I make this place?</h3>
+            <p>This website is just a fun little self-indulgent project of mine. I thought making a website would be a better alternative to social media, and also I just really like coding :P.</p>
+            <p><em>nikula on the net!</em> is the html-ification of what I consider to be 'me', so it is (and always will be) a work in progress. Expect broken pages and empty links.</p>
+          </div>
         </section>
 
-        <section>
-          <h2>section-0001</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.</p>
+        <section class="section-main" id="untitled-0001">
+          <h2>Untitled-0001</h2>
+
+          <div class="section-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Malesuada fames ac turpis egestas sed tempus urna et pharetra.</p>
+          </div>
         </section>
-        
+
       </main>
 
-      <!-- Sidebar -->
-      <aside id="body-sidebar">
-        <!-- Button link -->
-        <div id="buttongroup">
-          <img src="/images/button.gif">
-          <textarea readonly disabled>
-            <a href=""><img src=""></a>
-          </textarea>
-        </div>
-        
-        <hr>
-        
-        <!-- Navigation -->
-          <div id="pagenav">
-            <h3>Navigation</h3>
-            <nav><ul class="nobullets">
-              <li><a href="">navlink1</a></li>
-              <li><a href="">navlink2</a></li>
-              <li><a href="">navlink3</a></li>
-            </ul></nav>
-          </div>
+      <div class="sticky-holder">
+        <aside class="sticky-nav">
+          <ul class="breadcrumb nobullets">
+            <li><a href="">index</a></li>
+          </ul>
+          <ul class="nav-sidebar">
+            <li><a href="#landing">Landing</a></li>
+            <li><a href="#untitled-0001">Untitled-0001</a></li>
+          </ul>
+        </aside>
 
-        <hr>
-        
-        <!-- Tags -->
-        <nav id="taglist"><ul class="nobullets">
-          <li><a href="">#tag1</a></li>
-          <li><a href="">#tag2</a></li>
-          <li><a href="">#tag3</a></li>
-        </ul></nav>
-        
-      </aside>
-      
+        <aside class="sticky-trinkets">
+          <div class="buttongroup">
+            <img src="https://snipchu.neocities.org/images/button.gif">
+            <textarea disabled><img src="https://snipchu.neocities.org/images/button.gif"></textarea>
+          </div>
+        </aside>
+      </div>
+
     </div>
-    
+      
+    <footer>
+      <p>© 2023 snipchu :P</p>
+      <a href="https://tumblr.com/snipchu"><i class="nf nf-fa-tumblr"></i></a>
+      <a href="https://github.com/snipchu"><i class="nf nf-fa-github"></i></a>
+      <a href="https://youtube.com/@snipchu"><i class="nf nf-md-youtube"></i></a>
+    </footer>
+
   </div></body>
-  
+
 </html>
