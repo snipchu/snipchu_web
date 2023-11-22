@@ -1,9 +1,7 @@
-/* Nerd fonts are my best friend! Icon awesome be damned! */
 @import url("https://www.nerdfonts.com/assets/css/webfont.css");
 
-/* bullets without dots 'n stuff */
 .nobullets { list-style: none; margin: 0; padding: 0; }
-  .nobullets > li { display: inline-block; }
+.nobullets > li { display: inline-block; }
 
 h1, h2 { margin: 0; }
 p {margin: 0 0 5px;}
@@ -13,39 +11,32 @@ h2, .breadcrumb, footer { background-color: orange; padding: 5px; }
 
 html { font-family: 'Roboto', sans-serif; color: #181615;}
 
-/* mobile */
+.body-container { max-width: 70%; margin: auto; }  
+  
+  /* header */
+  h1 { margin-bottom: 10px; text-align: center;}
+  .header-nav { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;}
+    .header-nav > * { background-color: orange; padding: 5px 15px; border-radius: 15px;}
 
-.body-container { max-width: 70%; height: auto; margin: auto; }
- 
-  header { text-align: center; }
-    h1 { margin-bottom: 10px;}
-      /* header navigation buttons */
-      .header-nav { display: flex; gap: 5px; justify-content: center; flex-wrap: wrap;}
-        .header-nav > * { background-color: orange; padding: 5px 15px; margin: 0 2px; border-radius: 15px;}
-
-  .main-content { display: flex; gap: 10px; flex-direction: column;}
-    main { max-width: 100%; padding: 10px 0;}
-
-      /* main section boxes */
-      .section-main { border: 1px solid orange; margin-bottom: 20px;}
-        .section-main:last-child {margin-bottom: 0;}
+  /* main section */
+  .main-content { display: flex; gap: 10px; flex-direction: column; padding: 10px 0;}
+    main { display: flex; flex-direction: column; gap: 20px;}
+      .section-main, .sticky-nav, .sticky-trinkets { border: 1px solid orange;}
       .section-body { padding: 5px;}
 
-    .sticky-holder { width: auto; padding: 10px 0;}
-      /* sticky navigation box 1 */
-      .sticky-nav { position: sticky; top: 10px; border: 1px solid orange; margin-bottom: 10px;}
-      /* sticky navigation */
-      .sticky-trinkets { position: sticky; top: 160px; border: 1px solid orange; padding: 5px; flex-wrap: wrap;}
-        .buttongroup { display: flex; gap: 5px;}
-        .buttongroup > textarea { height: 31px; width: 60px; resize: none; flex-grow: 1;}
-
-  footer { display: flex; }
-    footer > p { margin-right: auto; margin: 0 auto 0 0;}
-    footer > a { margin-left: 5px; text-decoration: none; color: #181615; }
+  /* sidebar*/
+  .sticky-boxes { position: sticky; top: 10px; display: flex; gap: 10px; flex-direction: column;}
+    .sticky-trinkets { padding: 5px; display: flex; gap: 5px; }
+      .sticky-trinkets > textarea { height: 27px; padding: 0; width: 60px; resize: none; flex-grow: 1;} 
+  
+  /* footer */
+  footer { display: flex; justify-content: space-between;}
+    footer > p { margin: 0;}
+    footer > div > a { text-decoration: none; color: #181615; }
 
 
 /* Computer support */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
   .body-container { max-width: 50%;}
   .main-content { flex-direction: row; }
   .sticky-trinkets { flex-wrap: nowrap;}
