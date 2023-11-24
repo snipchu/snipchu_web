@@ -1,44 +1,44 @@
-@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+/* link coloring */
+a {color: #3F16AD;}
+a:hover, a:visited {color: #CB4833;}
 
-.nobullets { list-style: none; margin: 0; padding: 0; }
-.nobullets > li { display: inline-block; }
-
+/* margin and font size changes */
 h1, h2 { margin: 0; }
-p {margin: 0 0 5px;}
-h2 {font-size: 20px;}
-h3 { margin: 15px 0;}
-h2, .breadcrumb, footer { background-color: orange; padding: 5px; }
+h1 { margin-bottom: 10px; text-align: center;}
+h2 { font-size: 20px; }
+p { margin: 0 0 5px; }
 
-html { font-family: 'Roboto', sans-serif; color: #181615;}
+/* section box formatting */
+h2, .breadcrumb, footer {background-color: #97A5C2; padding: 5px;}
+.section-main, .sticky-boxes > * {border: 1px solid #97A5C2;}
 
-.body-container { max-width: 70%; margin: auto; }  
+/* flex containers in column direction */
+.main-content, .sticky-boxes, main {display: flex; gap: 10px; flex-direction: column;}
+
+/* mobile */
+html {font-family: 'Roboto', sans-serif; color: #181615; background-color: #FAF7F5;}
+
+.body-container {width: 70%; margin: auto;}  
   
-  /* header */
-  h1 { margin-bottom: 10px; text-align: center;}
-  .header-nav { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;}
-    .header-nav > * { background-color: orange; padding: 5px 15px; border-radius: 15px;}
+  /* header nav */
+  .header-nav {display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;}
+    .header-nav > * {background-color: #97A5C2; padding: 5px 15px; border-radius: 15px;}
 
   /* main section */
-  .main-content { display: flex; gap: 10px; flex-direction: column; padding: 10px 0;}
-    main { display: flex; flex-direction: column; gap: 20px;}
-      .section-main, .sticky-nav, .sticky-trinkets { border: 1px solid orange;}
-      .section-body { padding: 5px;}
+  .main-content {margin: 10px 0;}
+    .section-body {padding: 5px;}
 
   /* sidebar*/
-  .sticky-boxes { position: sticky; top: 10px; display: flex; gap: 10px; flex-direction: column;}
-    .sticky-trinkets { padding: 5px; display: flex; gap: 5px; }
-      .sticky-trinkets > textarea { height: 27px; padding: 0; width: 60px; resize: none; flex-grow: 1;} 
+  .sticky-boxes {position: sticky; top: 10px;}
+    .sticky-trinkets {padding: 5px; display: flex; gap: 5px;}
+      .sticky-trinkets > textarea {height: 27px; padding: 0; width: 80px; resize: none; flex-grow: 1;} 
   
   /* footer */
-  footer { display: flex; justify-content: space-between;}
-    footer > p { margin: 0;}
-    footer > div > a { text-decoration: none; color: #181615; }
-
+  footer {display: flex; justify-content: space-between;}
+    footer > p {margin: 0;}
 
 /* Computer support */
 @media screen and (min-width: 800px) {
-  .body-container { max-width: 50%;}
-  .main-content { flex-direction: row; }
-  .sticky-trinkets { flex-wrap: nowrap;}
-    .buttongroup > textarea { flex-grow: 0; }
+  .body-container {width: 50%;}
+  .main-content {flex-direction: row;}
 }
