@@ -1,3 +1,6 @@
+/* edit on 11/24/23: Added Nerd Fonts Icons */
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+
 /* Link styling */
 a:hover { text-decoration: underline;}
 a {text-decoration: none; color: #3363A1;}
