@@ -3,10 +3,12 @@ a {color: #3F16AD;}
 a:hover, a:visited {color: #CB4833;}
 
 /* margin and font size changes */
-h1, h2 { margin: 0; }
-h1 { margin-bottom: 10px; text-align: center;}
-h2 { font-size: 20px; }
-p { margin: 0 0 5px; }
+h1, h2 {margin: 0;}
+h1 {margin-bottom: 10px; text-align: center;}
+h2 {font-size: 20px;}
+h3 {margin: 10px 0;}
+p {margin: 0 0 5px;}
+ul {list-style: square inside; padding-left: 20px;}
 
 /* section box formatting */
 h2, .breadcrumb, footer {background-color: #97A5C2; padding: 5px;}
@@ -25,6 +27,7 @@ html {font-family: 'Roboto', sans-serif; color: #181615; background-color: #FAF7
     .header-nav > * {background-color: #97A5C2; padding: 5px 15px; border-radius: 15px;}
 
   /* main section */
+  main {width: 100%;}
   .main-content {margin: 10px 0;}
     .section-body {padding: 5px;}
 
