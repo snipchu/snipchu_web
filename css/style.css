@@ -1,6 +1,6 @@
 /* link coloring */
-a {color: #3F16AD;}
-a:hover, a:visited {color: #CB4833;}
+a {color: #021ca2;}
+a:hover, a:active {color: #CB4833;}
 
 /* margin and font size changes */
 h1, h2 {margin: 0;}
@@ -11,7 +11,7 @@ p {margin: 0 0 5px;}
 ul {list-style: square inside; padding-left: 20px;}
 
 /* section box formatting */
-h2, .breadcrumb, footer {background-color: #97A5C2; padding: 5px;}
+h2, .breadcrumb, label[for=buttontextarea]>p,footer {background-color: #97A5C2; padding: 5px; margin: 0;}
 .section-main, .sticky-boxes > * {border: 1px solid #97A5C2;}
 
 /* flex containers in column direction */
