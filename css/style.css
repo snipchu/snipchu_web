@@ -34,6 +34,7 @@ html {font-family: 'Roboto', sans-serif; color: #181615; background-color: #FAF7
   /* sidebar*/
   .sticky-boxes {position: sticky; top: 10px;}
     .sticky-trinkets {padding: 5px; display: flex; gap: 5px;}
+      .sticky-trinkets > img {height: 31px;}
       .sticky-trinkets > textarea {height: 27px; padding: 0; width: 80px; resize: none; flex-grow: 1;} 
   
   /* footer */
