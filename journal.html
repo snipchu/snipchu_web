@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
     <title>nikula on the net!</title>
+    <style>
+      #shelf > div > h3 { text-align: center; }
+      .bookshelf { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; text-align: center; }
+      .bookshelf > a > img { width: 88px; height: 31px;}
+    </style>
   </head>
   
   <body><div class="body-container">
@@ -17,7 +22,7 @@
       <nav class="header-nav">
         <a href="./index.html">index</a>
         <a href="./about.html">about me</a>
-        <a href="./writings.html">writings</a>
+        <a href="./journal.html">journal</a>
         <a href="./media.html">media</a>
         <a href="./site.html">the site</a>
       </nav>
@@ -36,7 +41,21 @@
         <section class="section-main" id="shelf">
           <h2>The Shelf</h2>
           <div class="section-body">
-            <p>(This section is currently WIP. Check back later!)</p>
+            <h3>Writings</h3>
+            <div class="bookshelf">
+              <a href=""><img src="./images/journal/diary.png" title="Diary (daily events)"></a>
+              <a href=""><img src="./images/journal/articles.png" title="Article (rambles)"></a>
+              <a href=""><img src="./images/journal/gallery.png" title="Gallery (pictures)"></a>
+            </div>
+
+            <h3>Shrines</h3>
+            <div class="bookshelf">
+              <a href=""><img src="./images/journal/p2.png" title="Portal 2"></a>
+              <a href=""><img src="./images/journal/molcar.png" title="Pui Pui Molcar"></a>
+              <a href=""><img src="./images/journal/tmgc.png" title="Tamagotchi"></a>
+              <a href=""><img src="./images/journal/md.png" title="Murder Drones"></a>
+            </div>
+
           </div>
         </section>
       </main>
@@ -44,7 +63,7 @@
       <div class="sticky-holder"><div class="sticky-boxes">
         <aside class="sticky-nav">
           <nav class="breadcrumb">
-            <a href="">writings</a>
+            <p>journal</p>
           </nav>
           <ul class="nav-sidebar">
             <li><a href="#landing">Landing</a></li>

@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
     <title>nikula on the net!</title>
+    <style>
+      #gallery > div > h3 {text-align: center;}
+      .bookshelf { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; text-align: center;}
+      .bookshelf > a > img { width: 88px; height: 31px;}
+    </style>
   </head>
   
   <body><div class="body-container">
@@ -17,7 +22,7 @@
       <nav class="header-nav">
         <a href="./index.html">index</a>
         <a href="./about.html">about me</a>
-        <a href="./writings.html">writings</a>
+        <a href="./journal.html">journal</a>
         <a href="./media.html">media</a>
         <a href="./site.html">the site</a>
       </nav>
@@ -29,24 +34,33 @@
           <h2>Landing</h2>
 
           <div class="section-body">
-            <p>I originally wanted to call this page "projects" or something, but I never actually finish any of them LOL...<br>
-              So I've just called this page "media", for basically anything picture related. Most (if not all) images will be dithered using <a href="https://doodad.dev/dither-me-this/">Dither Me This</a> to decrease file size.</p>
+            <p>I originally wanted to call this page "projects" or something, but I rarely finish any of my projects LOL... So I've just called this page "media", so I can store both my art and projects here. Basically, if it isn't diary-related, it goes here.</p>
+            <p>All images (excluding art) will be dithered using <a href="https://doodad.dev/dither-me-this/">Dither Me This</a> to decrease file size.</p>
           </div>
         </section>
 
         <section class="section-main" id="gallery">
-          <h2>The Gallery</h2>
+          <h2>The Workshop</h2>
           <div class="section-body">
-            <!--
-              * = will include description
-
-              Art (traditional and digital tags)
-              *OCS
-              Animations (my animations)
-              Film (for film class)
-              *Photos (daily pictures in my life)
-              *Electronics
-            -->
+            <h3>Artwork</h3>
+            <div class="bookshelf">
+              <a href=""><img src="./images/media/ocs.png" title="My OCS"></a>
+              <a href=""><img src="./images/media/digitalart.png" title="Digital Art"></a>
+              <a href=""><img src="./images/media/otherart.png" title="Other Art"></a>
+              <a href=""><img src="./images/media/anims.png" title="Animations"></a>
+            </div>
+            <h3>Technology</h3>
+            <div class="bookshelf">
+              <a href=""><img src="./images/media/pico.png" title="Raspberry Pi Pico"></a>
+              <a href=""><img src="./images/media/arduino.png" title="Arduino UNO"></a>
+              <a href=""><img src="./images/media/privacy.png" title="Privacy on the Net"></a>
+              <a href=""><img src="./images/media/distros.png" title="My Favorite Distros"></a>
+            </div>
+            <h3>Projects</h3>
+            <div class="bookshelf">
+              <a href=""><img src="./images/media/bun-circuits.png" title="Bunnyguy Invasion: Circits"></a>
+              <a href=""><img src="./images/media/bun-ad2.png" title="Bunnyguy Adventure #2: Christmas Special"></a>
+            </div>
           </div>
         </section>
       </main>
@@ -54,7 +68,7 @@
       <div class="sticky-holder"><div class="sticky-boxes">
         <aside class="sticky-nav">
           <nav class="breadcrumb">
-            <a href="">media</a>
+            <p>media</p>
           </nav>
           <ul class="nav-sidebar">
             <li><a href="#landing">Landing</a></li>
