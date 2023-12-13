@@ -11,7 +11,9 @@
     <style>
       #gallery > div > h3 {text-align: center;}
       .bookshelf { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; text-align: center;}
-      .bookshelf > a > img { width: 88px; height: 31px;}
+      .bookshelf > a > figure {margin: 0;}
+      .bookshelf > a > figure > figcaption { font-size: smaller;}
+      .bookshelf > a > figure > img { width: 88px; height: 31px;}
     </style>
   </head>
   
@@ -44,22 +46,22 @@
           <div class="section-body">
             <h3>Artwork</h3>
             <div class="bookshelf">
-              <a href=""><img src="./images/media/ocs.png" title="My OCS"></a>
-              <a href=""><img src="./images/media/digitalart.png" title="Digital Art"></a>
-              <a href=""><img src="./images/media/otherart.png" title="Other Art"></a>
-              <a href=""><img src="./images/media/anims.png" title="Animations"></a>
+              <a href=""><figure><img src="./images/media/ocs.png" alt=""><figcaption>My OCS</figcaption></figure></a>
+              <a href=""><figure><img src="./images/media/digitalart.png" alt=""><figcaption>Digital Art</figcaption></figure></a>
+              <a href=""><figure><img src="./images/media/otherart.png" alt=""><figcaption>Other Art</figcaption></figure></a>
+              <a href=""><figure><img src="./images/media/anims.png" alt=""><figcaption>Animations</figcaption></figure></a>
             </div>
             <h3>Technology</h3>
             <div class="bookshelf">
-              <a href=""><img src="./images/media/pico.png" title="Raspberry Pi Pico"></a>
-              <a href=""><img src="./images/media/arduino.png" title="Arduino UNO"></a>
-              <a href=""><img src="./images/media/privacy.png" title="Privacy on the Net"></a>
-              <a href=""><img src="./images/media/distros.png" title="My Favorite Distros"></a>
+              <a href=""><figure><img src="./images/media/pico.png" alt=""><figcaption>Raspberry Pi Pico</figcaption></figure></a>
+              <a href=""><figure><img src="./images/media/arduino.png" alt=""><figcaption>Arduino UNO</figcaption></figure></a>
+              <a href=""><figure><img src="./images/media/privacy.png" alt=""><figcaption>Online Privacy</figcaption></figure></a>
+              <a href=""><figure><img src="./images/media/distros.png" alt=""><figcaption>Favorite Distros</figcaption></figure></a>
             </div>
             <h3>Projects</h3>
             <div class="bookshelf">
-              <a href=""><img src="./images/media/bun-circuits.png" title="Bunnyguy Invasion: Circits"></a>
-              <a href=""><img src="./images/media/bun-ad2.png" title="Bunnyguy Adventure #2: Christmas Special"></a>
+              <a href=""><figure><img src="./images/media/bun-circuits.png" alt=""><figcaption>Bunnyguy Circuits</figcaption></figure></a>
+              <a href=""><figure><img src="./images/media/bun-ad2.png" alt=""><figcaption>BG Adventure #2</figcaption></figure></a>
             </div>
           </div>
         </section>
