@@ -4,16 +4,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <link rel="icon" type="x-icon" href="images/favicon.gif">
+    <link rel="icon" type="image/x-icon" href="images/favicon.gif">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
     <title>nikula on the net!</title>
     <style>
       #shelf > div > h3 { text-align: center; }
       .bookshelf { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; text-align: center; }
-      .bookshelf > a > figure {margin: 0;}
-      .bookshelf > a > figure > figcaption { font-size: smaller;}
-      .bookshelf > a > figure > img { width: 88px; height: 31px;}
+      .bookshelf > a { font-size: smaller;}
+      .bookshelf > a > img { width: 88px; height: 31px; display: block; margin: auto;}
     </style>
   </head>
   
@@ -45,25 +44,26 @@
         <section class="section-main" id="shelf">
           <h2>The Shelf</h2>
           <div class="section-body">
+
             <h3>Daily Life</h3>
-            <div class="bookshelf">
-              <a href="http://zqjqgq754doxm7tzwa34odlwck2h7m7ww4hzqqw2velln7smwlqndyid.onion/"><figure><img src="./images/journal/diary.png" alt=""><figcaption>Diary</figcaption></figure></a>
-              <a href="./journal/gallery.html"><figure><img src="./images/journal/gallery.png" alt=""><figcaption>Gallery</figcaption></figure></a>
-            </div>
+            <nav class="bookshelf">
+              <a href="http://zqjqgq754doxm7tzwa34odlwck2h7m7ww4hzqqw2velln7smwlqndyid.onion/"><img src="./images/journal/diary.png" alt="">Diary</a>
+              <a href="./journal/gallery.html"><img src="./images/journal/gallery.png" alt="">Gallery</a>
+            </nav>
 
             <h3>Articles</h3>
-            <div class="bookshelf">
-              <a href=""><figure><img src="./images/journal/gallery.png" alt=""><figcaption>Gallery</figcaption></figure></a>
-              <a href=""><figure><img src="./images/journal/gallery.png" alt=""><figcaption>Gallery</figcaption></figure></a>
-            </div>
+            <nav class="bookshelf">
+              <a href=""><img src="./images/journal/gallery.png" alt="">Gallery</a>
+              <a href=""><img src="./images/journal/gallery.png" alt="">Gallery</a>
+            </nav>
 
             <h3>Shrines</h3>
-            <div class="bookshelf">
-              <a href="./journal/portal2.html"><figure><img src="./images/journal/p2.png" alt=""><figcaption>Portal 2</figcaption></figure></a>
-              <a href="./journal/molcar.html"><figure><img src="./images/journal/molcar.png" alt=""><figcaption>Pui Pui Molcar</figcaption></figure></a>
-              <a href="./journal/tamagotchi.html"><figure><img src="./images/journal/tmgc.png" alt=""><figcaption>Tamagotchi</figcaption></figure></a>
-              <a href="./journal/murderdrones.html"><figure><img src="./images/journal/md.png" alt=""><figcaption>Murder Drones</figcaption></figure></a>
-            </div>
+            <nav class="bookshelf">
+              <a href="./journal/portal2.html"><img src="./images/journal/p2.png" alt="">Portal 2</a>
+              <a href="./journal/molcar.html"><img src="./images/journal/molcar.png" alt="">Pui Pui Molcar</a>
+              <a href="./journal/tamagotchi.html"><img src="./images/journal/tmgc.png" alt="">Tamagotchi</a>
+              <a href="./journal/murderdrones.html"><img src="./images/journal/md.png" alt="">Murder Drones</a>
+            </nav>
 
           </div>
         </section>
@@ -81,7 +81,7 @@
         </aside>
 
         <aside>
-          <label for="buttontextarea"><p>Add my button!</p></label>
+          <label for="buttontextarea">Add my button!</label>
           <div class="sticky-trinkets">
             <img src="./images/button.gif" title="An 88x31 button for snipchu.neocities.org.">
             <textarea id="buttontextarea" disabled><a href="https://snipchu.neocities.org"><img src="https://snipchu.neocities.org/images/button.gif" alt="An 88x31 button for snipchu.neocities.org."></a></textarea>

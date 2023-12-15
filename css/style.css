@@ -11,7 +11,7 @@ p {margin: 0 0 5px;}
 ul {list-style: square inside; padding-left: 20px;}
 
 /* section box formatting */
-h2, .breadcrumb, label[for=buttontextarea]>p,footer {background-color: #97A5C2; padding: 5px; margin: 0;}
+h2, .breadcrumb, label[for=buttontextarea],footer {background-color: #97A5C2; padding: 5px; margin: 0; display: block;}
 .section-main, .sticky-boxes > * {border: 1px solid #97A5C2;}
 
 /* flex containers in column direction */
