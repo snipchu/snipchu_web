@@ -4,16 +4,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.gif">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.gif">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./css/shelf.css">
     <title>nikula on the net!</title>
-    <style>
-      #gallery > div > h3 {text-align: center;}
-      .bookshelf { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; text-align: center;}
-      .bookshelf > a { font-size: smaller;}
-      .bookshelf > a > img { width: 88px; height: 31px; display: block; margin: auto;}
-    </style>
+    <!-- tooltip -->
+    <link rel="stylesheet" type="text/css" media="all" href="./css/tooltips.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="./css/tooltips.js"></script>
+    <script>
+      (function($){
+        $(document).ready(function(){
+          $("[title]").style_my_tooltips();
+        });
+      })(jQuery);
+    </script>
   </head>
   
   <body><div class="body-container">
@@ -40,13 +46,13 @@
           </div>
         </section>
 
-        <section class="section-main" id="gallery">
+        <section class="section-main" id="shelf">
           <h2>The Workshop</h2>
           <div class="section-body">
 
             <h3>Artwork</h3>
             <nav class="bookshelf">
-              <a href=""><img src="./images/media/ocs.png" alt="">My OCS</a>
+              <a href="./media/ocs.html"><img src="./images/media/ocs.png" alt="">My OCS</a>
               <a href=""><img src="./images/media/digitalart.png" alt="">Digital Art</a>
               <a href=""><img src="./images/media/otherart.png" alt="">Other Art</a>
               <a href=""><img src="./images/media/anims.png" alt="">Animations</a>

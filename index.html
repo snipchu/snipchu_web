@@ -1,13 +1,30 @@
+<!--
+Feel free to use my code as a reference for your own website!
+You're free to borrow small bits of my code, but please try to add your own code as well!
+Your website should represent YOU, not me! Make your website YOURS!
+-->
+
 <!DOCTYPE html>
 <html lang=en>
   
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.gif">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.gif">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./css/style.css">
     <title>nikula on the net!</title>
+    <!-- tooltip -->
+    <link rel="stylesheet" type="text/css" media="all" href="./css/tooltips.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="./css/tooltips.js"></script>
+    <script>
+      (function($){
+        $(document).ready(function(){
+          $("[title]").style_my_tooltips();
+        });
+      })(jQuery);
+    </script>
   </head>
   
   <body><div class="body-container">

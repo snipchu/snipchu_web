@@ -4,15 +4,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <link rel="icon" type="x-icon" href="images/favicon.gif">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.gif">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" type="text/css" media="all" href="../css/style.css">
     <title>nikula on the net!</title>
-    <style>
-      #shelf > div > h3 { text-align: center; }
-      .bookshelf { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; text-align: center; }
-      .bookshelf > a > img { width: 88px; height: 31px;}
-    </style>
+    <!-- tooltip -->
+    <link rel="stylesheet" type="text/css" media="all" href="../css/tooltips.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="../css/tooltips.js"></script>
+    <script>
+      (function($){
+        $(document).ready(function(){
+          $("[title]").style_my_tooltips();
+        });
+      })(jQuery);
+    </script>
   </head>
   
   <body><div class="body-container">
@@ -30,16 +36,13 @@
 
     <div class="main-content">
       <main>
-        <section class="section-main" id="landing">
-          <h2>Landing</h2>
+        <section class="section-main" id="unt0001">
+          <h2>Portal 2</h2>
 
           <div class="section-body">
-            <p>I am not close to a professional author or a storyteller, but I do love to type, and I have a terrible memory. This page is a repository (kind of like an online diary) for all of my thoughts, daily events, and rambles before I forget anything.</p>
-            <p>My diary is only accessible to Tor users <small>(<a href="https://support.torproject.org/about/what-is-tor/">wtf is tor?</a>)</small> because I write about my daily life in heavy detail and is super personal to me!...</p>
-            <p>I plan to enforce some kind of password in the future, so please email me if you'd like to read my diary.</p>
+            <p>WIP</p>
           </div>
         </section>
-
       </main>
 
       <div class="sticky-holder"><div class="sticky-boxes">
@@ -49,12 +52,12 @@
           </nav>
           <ul class="nav-sidebar">
             <li><a href="#landing">Landing</a></li>
-            <li><a href="#shelf">The Shelf</a></li>
+            <li><a href="#unt0001">Untitled-0001</a></li>
           </ul>
         </aside>
 
         <aside>
-          <label for="buttontextarea"><p>Add my button!</p></label>
+          <label for="buttontextarea">Add my button!</label>
           <div class="sticky-trinkets">
             <img src="../images/button.gif" title="An 88x31 button for snipchu.neocities.org.">
             <textarea id="buttontextarea" disabled><a href="https://snipchu.neocities.org"><img src="https://snipchu.neocities.org/images/button.gif" alt="An 88x31 button for snipchu.neocities.org."></a></textarea>

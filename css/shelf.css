@@ -1,0 +1,4 @@
+#shelf > div > h3 {text-align: center;}
+.bookshelf {display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; text-align: center;}
+.bookshelf > a {font-size: smaller;}
+.bookshelf > a > img {width: 88px; height: 31px; display: block; margin: auto;}

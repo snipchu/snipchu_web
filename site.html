@@ -4,10 +4,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.gif">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.gif">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./css/style.css">
     <title>nikula on the net!</title>
+    <!-- tooltip -->
+    <link rel="stylesheet" type="text/css" media="all" href="./css/tooltips.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="./css/tooltips.js"></script>
+    <script>
+      (function($){
+        $(document).ready(function(){
+          $("[title]").style_my_tooltips();
+        });
+      })(jQuery);
+    </script>
   </head>
   
   <body><div class="body-container">
@@ -41,9 +52,10 @@
         <section class="section-main" id="credits">
           <h2>Credits</h2>
           <ul>
+            <li><a href="http://manos.malihu.gr/style-my-tooltips-jquery-plugin/">Style-my-tooltips</a>: Customize tooltips with this jQuery plugin.</li>
             <li><a href="https://doodad.dev/dither-me-this/">Dither Me This</a>: Used to dither images and reduce file size.</li>
             <li><a href="https://coolors.co/">Coolors</a>: A color palette generator.</li>
-            <li><a href="https://hekate2.github.io/buttonmaker/">88x31 Button Maker</a>: Make some 88x31 buttons with ease.</li>
+            <li><a href="https://hekate2.github.io/buttonmaker/">88x31 Button Maker</a>: Make some 88x31 buttons.</li>
           </ul>
         </section>
 
