@@ -1,0 +1,41 @@
+:root {
+  --bgwhite: #fdfcfa;
+  --softorange: #fad09e;
+  --darkorange: #fcb869;
+  --orangeline: #f97e38;
+  --font: #1a0b01;
+}
+
+h1 {margin: 1rem 0;}
+h2 {margin: 0; padding: 0.25rem; background-color: var(--softorange); border-bottom: 2px dotted var(--orangeline);}
+h3 {margin: 0;}
+ul, ol {margin: 0; padding: 0.5rem 2rem;}
+hr {border: none; border-bottom: 2px dotted var(--darkorange);}
+
+html {
+  font-family: Roboto;
+  background-color: var(--bgwhite);
+  color: var(--font);
+}
+
+#body {
+  width: 80%; margin: auto; padding: 0.5rem;
+  display: flex; flex-direction: column; gap: 0.75rem;
+  background-color: var(--darkorange); border: 2px dotted var(--orangeline);
+}
+
+header, section, footer {outline: 2px dotted var(--orangeline); background-color: var(--softorange);}
+  #header-nav {display: flex; justify-content: space-around;}
+  section {background-color: var(--bgwhite);}
+  section > *:not(h2), footer>* {margin: .25rem .25rem;}
+  main {display: flex; flex-direction: column; gap: 0.75rem;}
+    form>label {display: block; margin: 0.25rem 0;}
+    form>select, form>input[type=text] {width: 15rem;}
+    .ast {color: #eb0000;}
+  #members { list-style: none; margin: 0; padding: 0.25rem; text-align: center;display: flex; flex-direction: column; gap: 0.75rem;}
+    .noshow {text-decoration: line-through underline;}
+
+/* Computer support */
+@media screen and (min-width: 40em) {
+  #body {width: 45%;}
+}
