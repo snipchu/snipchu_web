@@ -6,9 +6,8 @@
   --font: #1a0b01;
 }
 
-h1 {margin: 1rem 0;}
-h2 {margin: 0; padding: 0.25rem; background-color: var(--softorange); border-bottom: 2px dotted var(--orangeline);}
-h3 {margin: 0;}
+h1, h2, h3 {margin: 0;}
+h2 {padding: 0.25rem; background-color: var(--softorange); border-bottom: 2px dotted var(--orangeline);}
 ul, ol {margin: 0; padding: 0.5rem 2rem;}
 hr {border: none; border-bottom: 2px dotted var(--darkorange);}
 
@@ -24,18 +23,30 @@ html {
   background-color: var(--darkorange); border: 2px dotted var(--orangeline);
 }
 
-header, section, footer {outline: 2px dotted var(--orangeline); background-color: var(--softorange);}
-  #header-nav {display: flex; justify-content: space-around;}
+nav, section, footer {outline: 2px dotted var(--orangeline); background-color: var(--softorange);}
+  h1 > a > img {max-width: 75%; padding: 0.25rem 0 ;margin: auto; display: block;}
+  #header-nav {padding: 0.25rem 0; display: flex; justify-content: space-around;}
   section {background-color: var(--bgwhite);}
   section > *:not(h2), footer>* {margin: .25rem .25rem;}
   main {display: flex; flex-direction: column; gap: 0.75rem;}
-    form>label {display: block; margin: 0.25rem 0;}
-    form>select, form>input[type=text] {width: 15rem;}
+    label, input[type=text],textarea {display: block; margin: 0.25rem 0;}
+    input:not(input[type=submit],input[type=reset]),select {width: 15rem;}
     .ast {color: #eb0000;}
+
+  #footerpng {margin: auto; max-height: 4rem;}
+
   #members { list-style: none; margin: 0; padding: 0.25rem; text-align: center;display: flex; flex-direction: column; gap: 0.75rem;}
-    .noshow {text-decoration: line-through underline;}
+    #members > li > span {text-decoration: line-through;}
+
+/* Tablet support */
+@media screen and (min-width: 30em) {
+  #body {width: 60%;}
+  h1 > a > img {max-width: 70%;}
+}
 
 /* Computer support */
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   #body {width: 45%;}
+  h1 > a > img {max-width: 60%;}
 }
+
