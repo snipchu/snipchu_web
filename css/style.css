@@ -1,0 +1,13 @@
+body {
+  width: 40%;
+  margin: 1.5rem auto;
+  border: 1px solid black;
+}
+  header {height: 5rem;}
+    header > img {height: 100%;}
+
+  #maincon {
+    display: flex; flex-direction: row;
+    border: 1px solid black;
+  }
+  
