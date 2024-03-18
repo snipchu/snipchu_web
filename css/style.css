@@ -1,12 +1,12 @@
 :root {
   --mono1: #3A3332;
-  --mono2: #696461;
-  --mono3: #D3C8C2;
+  --mono2: #5D5651;
+  --mono3: #CDBDB4;
   --mono4: #FEFAF6;
   --red: #EE917B;
   --yellow: #FDC172;
   --green: #ADB96C;
-  --blue: #79B098;
+  --blue: #73B0A3;
 }
 
 h1 {text-align: center; margin: .5rem 0 1rem 0; font-size: 2em;}
@@ -14,32 +14,45 @@ h2 {margin: .75rem 0;}
 h3, h4, h5, h6 {margin: .5rem 0;} 
 p {margin: .25rem 0;}
 ul {margin: 0.25rem 0;}
+a {color: var(--blue);}
+a:hover {color: var(--green);}
 
 body {
   display: flex; flex-direction: row;
   justify-content: center; gap: 1rem;
-  width: 55%; margin: 1rem auto;
+  width: 60%; margin: 1rem auto;
   font-family: sans-serif; color: var(--mono1);
   background-image: url("../media/bg.png");
 }
-
-body>div { width: 10rem; flex-grow: 0.25; flex-shrink: 0; }
-  div>nav, div>aside {
-    position: sticky; top: 1rem;
-    padding: .5rem;
-    border: 2px solid transparent;
-    border-image: url("../media/border.png") 5 round;
-    background-color: var(--mono4);
-  }
-    nav>h2 { margin: 0; font-size: 1.25em; }
-    nav>ul {list-style-type: none; padding: 0;}
-    nav>ul>li {margin-left: 1.5rem;}
-
-body>main>section {
-  border: 2px solid transparent;
+body>main>*, body>div>* {
+  border: 2px solid;
   border-image: url("../media/border.png") 5 round;
-  flex-grow: 1; flex-shrink: 1;
   background-color: var(--mono4);
   padding: .5rem; margin-bottom: 1rem;
 }
-  #mainpic {width: 100%;}
+  body>div { width: 10rem; flex-grow: 0; flex-shrink: 0;}
+    div>nav, div>aside { position: sticky; top: 1rem; }
+      nav>h2 { margin: 0; font-size: 1.25em; }
+      nav>ul {list-style-type: none; padding: 0;}
+      nav>ul>li {margin-left: 1.5rem;}
+
+  body>main {
+    flex-grow: 1; flex-shrink: 1;
+    min-width: 15rem; max-width: 25rem;
+  }
+    h1>span:nth-child(4n-3) {color: var(--red);}
+    h1>span:nth-child(4n-2) {color: var(--yellow);}
+    h1>span:nth-child(4n-1) {color: var(--green);}
+    h1>span:nth-child(4n) {color: var(--blue);}
+    #mainpic {width: 100%; object-fit: contain; display: block;}
+hr {display: none;}
+
+@media screen and (max-width: 40em) {
+  body {flex-direction: column;}
+  body>div, body>main {width:100%; min-width: 0; flex-grow: 1;}
+  hr {display: inline-block;}
+}
+
+@media screen and (max-width: 20em) {
+  body {width:80%;}
+}
