@@ -10,12 +10,12 @@
 }
 
 h1 {text-align: center; margin: .5rem 0 1rem 0; font-size: 2em;}
-h2 {margin: .75rem 0;}
-h3, h4, h5, h6 {margin: .5rem 0;} 
+h2, h3, h4, h5, h6 {margin: .5rem 0;}
 p {margin: .25rem 0;}
-ul {margin: 0.25rem 0;}
 a {color: var(--blue);}
 a:hover {color: var(--green);}
+ul {margin: 0.25rem 0; list-style-type: none; padding: 0;}
+li {margin-left: 1.5rem;}
 
 body {
   display: flex; flex-direction: row;
@@ -24,19 +24,19 @@ body {
   font-family: sans-serif; color: var(--mono1);
   background-image: url("../media/bg.png");
 }
+
 body>main>*, body>div>* {
   border: 2px solid;
   border-image: url("../media/border.png") 5 round;
   background-color: var(--mono4);
-  padding: .5rem; margin-bottom: 1rem;
+  padding: .5rem;
 }
-  body>div { width: 10rem; flex-grow: 0; flex-shrink: 0;}
-    div>nav, div>aside { position: sticky; top: 1rem; }
+  body>div { width: 10rem; flex-shrink: 0;}
+    div>nav, div>aside { position: sticky; top: 1rem;}
       nav>h2 { margin: 0; font-size: 1.25em; }
-      nav>ul {list-style-type: none; padding: 0;}
-      nav>ul>li {margin-left: 1.5rem;}
 
   body>main {
+    display: flex; flex-direction: column; gap: 1rem;
     flex-grow: 1; flex-shrink: 1;
     min-width: 15rem; max-width: 25rem;
   }
@@ -50,9 +50,13 @@ hr {display: none;}
 @media screen and (max-width: 40em) {
   body {flex-direction: column;}
   body>div, body>main {width:100%; min-width: 0; flex-grow: 1;}
-  hr {display: inline-block;}
+  hr {
+    display: inline-block;
+    border: 0; height: 4px; width: 100%;
+    background: url("../media/hr.png");
+  }
 }
 
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 25em) {
   body {width:80%;}
 }
