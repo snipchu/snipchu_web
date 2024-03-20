@@ -3,25 +3,40 @@
   --mono2: #5D5651;
   --mono3: #CDBDB4;
   --mono4: #FEFAF6;
-  --red: #EE917B;
-  --yellow: #FDC172;
-  --green: #ADB96C;
-  --blue: #73B0A3;
+  --red: #D34F46;
+  --yellow: #E46B1B;
+  --green: #7F911B;
+  --blue: #007C61;
+  /* The color palette I wish I could use for my website:(
+   * --red: #EE917B;
+   * --yellow: #FDC172;
+   * --green: #ADB96C;
+   * --blue: #73B0A3;
+   */
+}
+@font-face {
+  font-family: "Inconsolata";
+  src: url(./Inconsolata.ttf);
 }
 
 h1 {text-align: center; margin: .5rem 0 1rem 0; font-size: 2em;}
-h2, h3, h4, h5, h6 {margin: .5rem 0;}
-p {margin: .25rem 0;}
-a {color: var(--blue);}
-a:hover {color: var(--green);}
-ul {margin: 0.25rem 0; list-style-type: none; padding: 0;}
+h2, h3, h4, h5, h6, p {margin: .5rem 0;}
+a {color: var(--blue)}
+a:hover, a:active {color: var(--green);}
+ul {margin: 0.25rem 0; padding: 0; list-style-type: "- "}
 li {margin-left: 1.5rem;}
+hr {
+  display: block;
+  border: 0; height: .25rem; width: 100%;
+  background: url("../media/hr.png");
+}
+body>hr {display: none;}
 
 body {
   display: flex; flex-direction: row;
   justify-content: center; gap: 1rem;
   width: 60%; margin: 1rem auto;
-  font-family: sans-serif; color: var(--mono1);
+  font-family: Inconsolata; color: var(--mono1);
   background-image: url("../media/bg.png");
 }
 
@@ -31,9 +46,14 @@ body>main>*, body>div>* {
   background-color: var(--mono4);
   padding: .5rem;
 }
-  body>div { width: 10rem; flex-shrink: 0;}
+  body>div { 
+    width: 10rem; flex-shrink: 0;
+    display: flex; gap: 1rem;
+    flex-direction: column;
+  }
     div>nav, div>aside { position: sticky; top: 1rem;}
-      nav>h2 { margin: 0; font-size: 1.25em; }
+      nav>h2, aside>h2 { margin: 0; font-size: 1.25em; }
+    div>aside>img {display: block; margin: auto;}
 
   body>main {
     display: flex; flex-direction: column; gap: 1rem;
@@ -44,19 +64,15 @@ body>main>*, body>div>* {
     h1>span:nth-child(4n-2) {color: var(--yellow);}
     h1>span:nth-child(4n-1) {color: var(--green);}
     h1>span:nth-child(4n) {color: var(--blue);}
-    #mainpic {width: 100%; object-fit: contain; display: block;}
-hr {display: none;}
+    header>img {width: 100%; object-fit: contain; display: block;}
 
-@media screen and (max-width: 40em) {
-  body {flex-direction: column;}
-  body>div, body>main {width:100%; min-width: 0; flex-grow: 1;}
-  hr {
-    display: inline-block;
-    border: 0; height: 4px; width: 100%;
-    background: url("../media/hr.png");
-  }
+/* Tablet/Phone support */
+@media screen and (max-width: 38em) {
+  body {flex-direction: column; width: 65%;}
+  body>div, body>main {width:100%; flex-grow: 1;}
+  body>hr {display: block;}
 }
 
 @media screen and (max-width: 25em) {
-  body {width:80%;}
+  body {width:85%;}
 }
