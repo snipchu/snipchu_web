@@ -3,17 +3,20 @@
   --mono2: #5D5651;
   --mono3: #CDBDB4;
   --mono4: #FEFAF6;
-  --red: #D34F46;
-  --yellow: #E46B1B;
-  --green: #7F911B;
-  --blue: #007C61;
-  /* The color palette I wish I could use for my website:(
-   * --red: #EE917B;
-   * --yellow: #FDC172;
-   * --green: #ADB96C;
-   * --blue: #73B0A3;
-   */
+  --red: #EE917B;
+  --yellow: #FDC172;
+  --green: #ADB96C;
+  --blue: #73B0A3;
 }
+
+[darkmode] {
+  --mono1: #FEFAF6;
+  --mono2: #CDBDB4;
+  --mono3: #5D5651;
+  --mono4: #3A3332;
+  body {background-image: url("../media/bg-dark.png");}
+}
+
 @font-face {
   font-family: "Inconsolata";
   src: url(./Inconsolata.ttf);
@@ -35,25 +38,25 @@ body>hr {display: none;}
 body {
   display: flex; flex-direction: row;
   justify-content: center; gap: 1rem;
-  width: 60%; margin: 1rem auto;
+  width: 70%; margin: 1rem auto;
   font-family: Inconsolata; color: var(--mono1);
   background-image: url("../media/bg.png");
 }
 
-body>main>*, body>div>* {
+body>main>*, body>div>div>* {
   border: 2px solid;
   border-image: url("../media/border.png") 5 round;
   background-color: var(--mono4);
   padding: .5rem;
 }
-  body>div { 
-    width: 10rem; flex-shrink: 0;
-    display: flex; gap: 1rem;
-    flex-direction: column;
-  }
-    div>nav, div>aside { position: sticky; top: 1rem;}
+  body>div { width: 10rem; flex-shrink: 0; }
+    div>div {
+      position: sticky; top: 1rem;
+      display: flex; gap: 1rem;
+      flex-direction: column;
+    }
       nav>h2, aside>h2 { margin: 0; font-size: 1.25em; }
-    div>aside>img {display: block; margin: auto;}
+      #snipchubutton {display: block; margin: auto;}
 
   body>main {
     display: flex; flex-direction: column; gap: 1rem;
