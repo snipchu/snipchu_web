@@ -13,12 +13,9 @@
 
     <div><div>
       <aside>
-        <button type="button" onClick="toggletheme()">Toggle color theme</button>
-        <script>
-          function toggletheme() {
-            document.querySelector('html').toggleAttribute('darkmode');
-          }
-        </script>
+        <button id="darkmode" type="button" onClick="
+          document.querySelector(':root').toggleAttribute('darkmode');
+        ">Toggle color theme</button>
       </aside>
       <nav>
         <h2>index</h2>
@@ -53,26 +50,30 @@
           <span>b</span><span>u</span><span>n</span><span>n</span><span>y</span><span>g</span><span>u</span><span>y</span>
           <span>i</span><span>s</span><span>l</span><span>a</span><span>n</span><span>d</span>
         </h1>
-        <img src="./media/boat.png" alt="A pixel art drawing of Mr. Bunnyguy sailing on a fishing boat in the sunrise.">
+        <img id="headerboat" src="./media/boat.png" alt="A pixel art drawing of Mr. Bunnyguy sailing on a fishing boat in the sunrise.">
       </header>
       <section>
         <h2>Welcome!</h2>
         <p>Heyo! Welcome to my website!</p>
       </section>
+      <footer>
+        <p>This website was made with love by <a href="">Nicke</a>.<br>Hosted on <a href="https://neocities.org">Neocities</a> since April 14, 2023.</p>
+      </footer>
     </main>
     <hr>
     <div><div>
       <aside>
         <h2>Link back</h2>
         <p>Make sure to <a href="https://neocities.org/site_files/hotlinking">not hotlink</a>!</p>
-        <img id="snipchubutton" src="./media/snipchu.gif" alt="An 88x31 button for snipchu.neocities.org.">
+        <img id="button" src="./media/snipchu.gif" alt="An 88x31 button for snipchu.neocities.org.">
       </aside>
+
       <aside>
-      <aside id="statuscafe">
+      <div id="statuscafe">
         <div id="statuscafe-username"></div>
         <hr>
         <div id="statuscafe-content"></div>
-      </aside>
+      </div>
       <script src="https://status.cafe/current-status.js?name=snipchu" defer></script>
       </aside>
     </div></div>

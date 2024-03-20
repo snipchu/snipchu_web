@@ -3,10 +3,10 @@
   --mono2: #5D5651;
   --mono3: #CDBDB4;
   --mono4: #FEFAF6;
-  --red: #EE917B;
-  --yellow: #FDC172;
-  --green: #ADB96C;
-  --blue: #73B0A3;
+  --red: #D34F46;
+  --yellow: #E46B1B;
+  --green: #7F911B;
+  --blue: #007C61;
 }
 
 [darkmode] {
@@ -14,6 +14,10 @@
   --mono2: #CDBDB4;
   --mono3: #5D5651;
   --mono4: #3A3332;
+  --red: #EE917B;
+  --yellow: #FDC172;
+  --green: #ADB96C;
+  --blue: #73B0A3;
   body {background-image: url("../media/bg-dark.png");}
 }
 
@@ -38,7 +42,7 @@ body>hr {display: none;}
 body {
   display: flex; flex-direction: row;
   justify-content: center; gap: 1rem;
-  width: 70%; margin: 1rem auto;
+  width: 65%; margin: 1rem auto;
   font-family: Inconsolata; color: var(--mono1);
   background-image: url("../media/bg.png");
 }
@@ -55,8 +59,9 @@ body>main>*, body>div>div>* {
       display: flex; gap: 1rem;
       flex-direction: column;
     }
+      #darkmode {width:100%;}
       nav>h2, aside>h2 { margin: 0; font-size: 1.25em; }
-      #snipchubutton {display: block; margin: auto;}
+      #button {display: block; margin: auto;}
 
   body>main {
     display: flex; flex-direction: column; gap: 1rem;
@@ -72,7 +77,7 @@ body>main>*, body>div>div>* {
 /* Tablet/Phone support */
 @media screen and (max-width: 38em) {
   body {flex-direction: column; width: 65%;}
-  body>div, body>main {width:100%; flex-grow: 1;}
+  body>div, body>main {width:100%; flex-grow: 1; min-width: 0;}
   body>hr {display: block;}
 }
 
