@@ -18,12 +18,9 @@
   </head>
   
   <body>
-
     <div><div>
       <aside>
-        <button id="darkmode" type="button" onClick="
-          document.querySelector(':root').toggleAttribute('darkmode');
-        ">Toggle color theme</button>
+        <button id="darkmode" type="button" onClick="togglecolor()">Toggle dark mode</button>
       </aside>
       <nav>
         <h2>index</h2>
@@ -69,7 +66,9 @@
         <p>This website was made with love by <a href="">Nicke</a>.<br>Hosted on <a href="https://neocities.org">Neocities</a> since April 14, 2023.</p>
       </footer>
     </main>
+
     <hr>
+
     <div><div>
       <aside>
         <h2>Link back</h2>
@@ -78,13 +77,16 @@
       </aside>
 
       <aside>
-      <div id="statuscafe">
-        <div id="statuscafe-username"></div>
-        <hr>
-        <div id="statuscafe-content"></div>
-      </div>
-      <script src="https://status.cafe/current-status.js?name=snipchu" defer></script>
+        <div id="statuscafe">
+          <div id="statuscafe-username"></div>
+          <hr>
+          <div id="statuscafe-content"></div>
+        </div>
+        <script src="https://status.cafe/current-status.js?name=snipchu"></script>
       </aside>
     </div></div>
 
+    <script src="./js/colortheme.js"></script>
   </body>
+
+</html>
