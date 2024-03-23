@@ -11,4 +11,3 @@ function onload() {
     document.querySelector(':root').removeAttribute('darkmode');
   }
 }
-onload();

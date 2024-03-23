@@ -17,7 +17,7 @@
     </style>
   </head>
   
-  <body>
+  <body onload="onload()">
     <div><div>
       <aside>
         <button id="darkmode" type="button" onClick="togglecolor()">Toggle dark mode</button>
@@ -76,12 +76,10 @@
         <img id="button" src="./media/snipchu.gif" alt="An 88x31 button for snipchu.neocities.org.">
       </aside>
 
-      <aside>
-        <div id="statuscafe">
-          <div id="statuscafe-username"></div>
-          <hr>
-          <div id="statuscafe-content"></div>
-        </div>
+      <aside id="statuscafe">
+        <div id="statuscafe-username"></div>
+        <hr>
+        <p id="statuscafe-content"></p>
         <script src="https://status.cafe/current-status.js?name=snipchu"></script>
       </aside>
     </div></div>
