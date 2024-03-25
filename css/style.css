@@ -41,7 +41,7 @@ body>hr {display: none;}
 body {
   display: flex; flex-direction: row;
   justify-content: center; gap: 1rem;
-  width: 65%; margin: 1rem auto;
+  width: 70%; margin: 1rem auto;
   font-family: Inconsolata; color: var(--mono1);
   background-image: url("../media/bg.png");
 }
@@ -68,7 +68,7 @@ body>main>*, body>div>div>* {
   }
 
 /* Tablet/Phone support */
-@media screen and (max-width: 38em) {
+@media screen and (max-width: 40em) {
   body {flex-direction: column; width: 65%;}
   body>div, body>main {width:100%; flex-grow: 1; min-width: 0;}
   body>hr {display: block;}
