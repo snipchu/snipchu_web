@@ -41,7 +41,7 @@ body>hr {display: none;}
 body {
   display: flex; flex-direction: row;
   justify-content: center; gap: 1rem;
-  width: 70%; margin: 1rem auto;
+  width: 80%; margin: 1rem auto;
   font-family: Inconsolata; color: var(--mono1);
   background-image: url("../media/bg.png");
 }
@@ -60,6 +60,11 @@ body>main>*, body>div>div>* {
     }
       #darkmode {width:100%;}
       nav>h2, aside>h2 { margin: 0; font-size: 1.25em; }
+      #button {display: block; margin: auto;}
+      h1>span:nth-child(4n-3) {color: var(--red);}
+      h1>span:nth-child(4n-2) {color: var(--yellow);}
+      h1>span:nth-child(4n-1) {color: var(--green);}
+      h1>span:nth-child(4n) {color: var(--blue);}
 
   body>main {
     display: flex; flex-direction: column; gap: 1rem;
