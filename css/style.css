@@ -18,7 +18,7 @@
   --yellow: #FDC172;
   --green: #ADB96C;
   --blue: #73B0A3;
-  body {background-image: url("../media/bg-dark.png");}
+  body {background-image: url("../pics/bg-dark.png");}
 }
 @font-face {
   font-family: "Inconsolata";
@@ -34,7 +34,7 @@ li {margin-left: 1.5rem;}
 hr {
   display: block;
   border: 0; height: .25rem; width: 100%;
-  background: url("../media/hr.png");
+  background: url("../pics/hr.png");
 }
 body>hr {display: none;}
 
@@ -43,12 +43,12 @@ body {
   justify-content: center; gap: 1rem;
   width: 80%; margin: 1rem auto;
   font-family: Inconsolata; color: var(--mono1);
-  background-image: url("../media/bg.png");
+  background-image: url("../pics/bg.png");
 }
 
 body>main>*, body>div>div>* {
   border: 2px solid;
-  border-image: url("../media/border.png") 5 round;
+  border-image: url("../pics/border.png") 5 round;
   background-color: var(--mono4);
   padding: .5rem;
 }
@@ -60,7 +60,7 @@ body>main>*, body>div>div>* {
     }
       #darkmode {width:100%;}
       nav>h2, aside>h2 { margin: 0; font-size: 1.25em; }
-      #button {display: block; margin: auto;}
+      #snipchubutton {display: block; margin: auto;}
       h1>span:nth-child(4n-3) {color: var(--red);}
       h1>span:nth-child(4n-2) {color: var(--yellow);}
       h1>span:nth-child(4n-1) {color: var(--green);}
