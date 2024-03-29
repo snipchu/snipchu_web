@@ -65,6 +65,7 @@ body>main>*, body>div>div>* {
       h1>span:nth-child(4n-2) {color: var(--yellow);}
       h1>span:nth-child(4n-1) {color: var(--green);}
       h1>span:nth-child(4n) {color: var(--blue);}
+      #statuser, #statcont, main>*>p:last-child {margin: 0;}
 
   body>main {
     display: flex; flex-direction: column; gap: 1rem;
