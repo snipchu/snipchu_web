@@ -1,3 +1,5 @@
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+
 :root {
   --mono1: #3A3332;
   --mono2: #5D5651;
@@ -8,7 +10,6 @@
   --green: #7F911B;
   --blue: #007C61;
 }
-
 [darkmode] {
   --mono1: #FEFAF6;
   --mono2: #CDBDB4;
@@ -46,7 +47,7 @@ body {
   background-image: url("../pics/bg.png");
 }
 
-body>main>*, body>div>div>* {
+main>*, footer, body>div>div>* {
   border: 2px solid;
   border-image: url("../pics/border.png") 5 round;
   background-color: var(--mono4);
@@ -55,8 +56,6 @@ body>main>*, body>div>div>* {
   body>div { width: 10rem; flex-shrink: 0; }
     div>div {
       position: sticky; top: 1rem;
-      display: flex; gap: 1rem;
-      flex-direction: column;
     }
       #darkmode {width:100%;}
       nav>h2, aside>h2 { margin: 0; font-size: 1.25em; }
@@ -65,21 +64,64 @@ body>main>*, body>div>div>* {
       h1>span:nth-child(4n-2) {color: var(--yellow);}
       h1>span:nth-child(4n-1) {color: var(--green);}
       h1>span:nth-child(4n) {color: var(--blue);}
-      #statuser, #statcont, main>*>p:last-child {margin: 0;}
+      #statuser, #statcont, main>*>p:last-child, footer>p:last-child {margin: 0;}
 
-  body>main {
-    display: flex; flex-direction: column; gap: 1rem;
+  #middlecolumn {
+    min-width: 16rem; max-width: 25rem;
     flex-grow: 1; flex-shrink: 1;
-    min-width: 15rem; max-width: 25rem;
   }
+  #middlecolumn, div>div, main {
+    display: flex; gap: 1rem;
+    flex-direction: column;
+  }
+
+
+/* Mobile navbar */
+#mobilenav>header{
+  display: none;
+  box-sizing: border-box; padding: .5rem;
+  align-items: center; justify-content: space-between;
+}
+  #mobilenav>header>h1 {display: inline; margin: 0;}
+  #mobilenav>header>button {
+    background-color: transparent; border: none;
+    padding: 0; color: var(--mono1);
+  }
+    #mobilenav>header>button>i, #mobilenav>header>a>i {font-size: 1.5rem;}
+    #mobilenav>header>a {text-decoration: none;}
+    #mobilenav>header>a>i {
+      display: none;
+      background-image: linear-gradient(90deg, var(--red), var(--yellow), var(--blue));
+      color: transparent; background-clip: text;
+    }
 
 /* Tablet/Phone support */
 @media screen and (max-width: 40em) {
-  body {flex-direction: column; width: 65%;}
-  body>div, body>main {width:100%; flex-grow: 1; min-width: 0;}
+  body {flex-direction: column; width: 65%; margin-top: 4rem;}
+  body>div {width:100%; min-width: 0;}
   body>hr {display: block;}
+  #middlecolumn {min-width: 0; max-width: 100%;}
+
+  /* mobile nav bar */
+  #mobilenav {
+    position: fixed; z-index: 1;
+    top: 0; left: 0;
+    background-color: var(--mono4);
+  }
+    #mobilenav>header{display: flex;}
+    #menuitems {
+      display: none; gap: 0; flex-direction: column-reverse;
+      height: 24rem; overflow-y: auto;
+    }
+      #menuitems>*{border: none;}
+      #menuitems>aside {text-align: center;}
+        #darkmode {width: 10rem; margin: 0 auto;}
 }
 
 @media screen and (max-width: 25em) {
   body {width:85%;}
+}
+@media screen and (max-width: 20em) {
+  #mobilenav>header>a>i {display: inline;}
+  #mobilenav>header>h1 {display: none;}
 }

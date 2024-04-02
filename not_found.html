@@ -10,47 +10,56 @@
   </head>
   
   <body onload="onload()">
-    <div><div>
-      <aside>
-        <button id="darkmode" type="button" onClick="togglecolor()">Toggle dark mode</button>
-      </aside>
-      <nav>
-        <h2>index</h2>
-        <ul>
-          <li><a href="./index.html">homepage</a></li>
-          <li><a href="./about.html">about me</a></li>
-          <li><a href="./media.html">media</a></li>
-          <li><a href="./tech.html">technology</a></li>
-          <li><a href="./site.html">the site</a></li>
-        </ul>
-        <h2>journal</h2>
-        <ul>
-          <li><a href="">daily life</a></li>
-          <li><a href="">big events</a></li>
-          <li><a href="./journal/gallery.html">gallery</a></li>
-          <li><a href="./journal/reviews.html">reviews</a></li>
-          <li><a href="./journal/thoughts.html">headthoughts</a></li>
-        </ul>
-        <h2>shrines</h2>
-        <ul>
-          <li><a href="./shrines/portal2.html">portal 2</a></li>
-          <li><a href="./shrines/tmgc.html">tamagotchi</a></li>
-          <li><a href="./shrines/molcar.html">pui pui molcar</a></li>
-          <li><a href="./shrines/md.html">murder drones</a></li>
-        </ul>
-      </nav>
-    </div></div>
-    <hr>
+    <div id="mobilenav">
+      <header>
+        <button type="button" onClick="showmenu()"><i id="bunnyicon" class="nf nf-md-menu"></i></button>
+        <h1>bunnyguy island</h1>
+        <a href="#"><i class="nf nf-md-rabbit_variant"></i></a>
+      </header>
+      <div id="menuitems">
+        <aside>
+          <button id="darkmode" type="button" onClick="togglecolor()">Toggle dark mode</button>
+        </aside>
+        <nav>
+          <h2>index</h2>
+          <ul>
+            <li><a href="./index.html">homepage</a></li>
+            <li><a href="./about.html">about me</a></li>
+            <li><a href="./media.html">media</a></li>
+            <li><a href="./tech.html">technology</a></li>
+            <li><a href="./site.html">the site</a></li>
+          </ul>
+          <h2>journal</h2>
+          <ul>
+            <li><a href="">daily life</a></li>
+            <li><a href="">big events</a></li>
+            <li><a href="./journal/gallery.html">gallery</a></li>
+            <li><a href="./journal/reviews.html">reviews</a></li>
+            <li><a href="./journal/thoughts.html">headthoughts</a></li>
+          </ul>
+          <h2>shrines</h2>
+          <ul>
+            <li><a href="./shrines/portal2.html">portal 2</a></li>
+            <li><a href="./shrines/tmgc.html">tamagotchi</a></li>
+            <li><a href="./shrines/molcar.html">pui pui molcar</a></li>
+            <li><a href="./shrines/md.html">murder drones</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div id="middlecolumn">
     <main>
       <header>
         <h1>Page not found</h1>
         <p>The requested page was not found.</p>
         <a href="./index.html">Go back to index?</a>
       </header>
-      <footer>
-        <p>This website was made with love by <a href="">Nicke</a>.<br>Hosted on <a href="https://neocities.org">Neocities</a> since April 14, 2023.</p>
-      </footer>
     </main>
+    <footer>
+      <p>This website was made with love by <a href="">Nicke</a>.<br>Hosted on <a href="https://neocities.org">Neocities</a> since April 14, 2023.</p>
+    </footer>
+    </div>
 
     <hr>
 
@@ -60,7 +69,6 @@
         <p>Make sure to <a href="https://neocities.org/site_files/hotlinking">not hotlink</a>!</p>
         <img id="snipchubutton" src="./pics/snipchu.gif" alt="An 88x31 button for snipchu.neocities.org.">
       </aside>
-
       <aside>
         <p id="statuser"></p>
         <hr>
@@ -70,6 +78,7 @@
     </div></div>
 
     <script src="./js/colortheme.js"></script>
+    <script src="./js/mobilenav.js"></script>
     <script src="./js/letterize.min.js"></script>
   </body>
 
