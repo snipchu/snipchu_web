@@ -22,7 +22,7 @@
   body { background-image: url("../pics/bg-dark.png"); }
 }
 @font-face {
-  font-family: "Inconsolata" sans-serif;
+  font-family: "Inconsolata";
   src: url(./Inconsolata.otf);
   font-display: swap;
 }
@@ -44,7 +44,7 @@ body {
   display: flex; flex-direction: row;
   justify-content: center; gap: 1rem;
   width: 80%; margin: 1rem auto;
-  font-family: Inconsolata; color: var(--mono1);
+  font-family: Inconsolata, sans-serif; color: var(--mono1);
   background-image: url("../pics/bg.png");
   background-color: var(--mono4);
 }
