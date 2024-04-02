@@ -1,4 +1,4 @@
-@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+@import url("./nerdicons.css");
 
 :root {
   --mono1: #3A3332;
@@ -22,8 +22,9 @@
   body { background-image: url("../pics/bg-dark.png"); }
 }
 @font-face {
-  font-family: "Inconsolata";
+  font-family: "Inconsolata" sans-serif;
   src: url(./Inconsolata.otf);
+  font-display: swap;
 }
 
 h1 {text-align: center; margin: .5rem 0 1rem 0; font-size: 2em;}
@@ -60,7 +61,7 @@ main>*, footer, body>div>div>* {
     }
       #darkmode {width:100%;}
       nav>h2, aside>h2 { margin: 0; font-size: 1.25em; }
-      #snipchubutton {display: block; margin: auto;}
+      #snipchubutton {height: 31px; width: 88px; display: block; margin: auto;}
       h1>span:nth-child(4n-3) {color: var(--red);}
       h1>span:nth-child(4n-2) {color: var(--yellow);}
       h1>span:nth-child(4n-1) {color: var(--green);}

@@ -1,5 +1,5 @@
 var nav = document.getElementById("menuitems");
-var hammenu = document.getElementById("bunnyicon");
+var hammenu = document.getElementById("hamicon");
 function showmenu() {
   if (nav.style.display == "flex") {
     nav.style.display = "";
