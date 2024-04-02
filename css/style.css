@@ -3,7 +3,7 @@
 :root {
   --mono1: #3A3332;
   --mono2: #5D5651;
-  --mono3: #CDBDB4;
+  --mono3: #E7DCD6;
   --mono4: #FEFAF6;
   --red: #D34F46;
   --yellow: #E46B1B;
@@ -19,7 +19,7 @@
   --yellow: #FDC172;
   --green: #ADB96C;
   --blue: #73B0A3;
-  body {background-image: url("../pics/bg-dark.png");}
+  body { background-image: url("../pics/bg-dark.png"); }
 }
 @font-face {
   font-family: "Inconsolata";
@@ -45,6 +45,7 @@ body {
   width: 80%; margin: 1rem auto;
   font-family: Inconsolata; color: var(--mono1);
   background-image: url("../pics/bg.png");
+  background-color: var(--mono4);
 }
 
 main>*, footer, body>div>div>* {
@@ -78,22 +79,23 @@ main>*, footer, body>div>div>* {
 
 /* Mobile navbar */
 #mobilenav>header{
-  display: none;
+  display: none; height: 3rem;
   box-sizing: border-box; padding: .5rem;
   align-items: center; justify-content: space-between;
 }
-  #mobilenav>header>h1 {display: inline; margin: 0;}
+  #mobilenav>header>a>h1 {display: inline; margin: 0;}
   #mobilenav>header>button {
     background-color: transparent; border: none;
     padding: 0; color: var(--mono1);
   }
-    #mobilenav>header>button>i, #mobilenav>header>a>i {font-size: 1.5rem;}
-    #mobilenav>header>a {text-decoration: none;}
+    #mobilenav>header>button>i, #mobilenav>header>a>i {font-size: 1.75rem;}
+    #mobilenav>header>a:last-child {text-decoration: none;}
     #mobilenav>header>a>i {
       display: none;
       background-image: linear-gradient(90deg, var(--red), var(--yellow), var(--blue));
       color: transparent; background-clip: text;
     }
+
 
 /* Tablet/Phone support */
 @media screen and (max-width: 40em) {
@@ -112,6 +114,7 @@ main>*, footer, body>div>div>* {
     #menuitems {
       display: none; gap: 0; flex-direction: column-reverse;
       height: 24rem; overflow-y: auto;
+      background-color: var(--mono3);
     }
       #menuitems>*{border: none;}
       #menuitems>aside {text-align: center;}
@@ -120,8 +123,6 @@ main>*, footer, body>div>div>* {
 
 @media screen and (max-width: 25em) {
   body {width:85%;}
-}
-@media screen and (max-width: 20em) {
   #mobilenav>header>a>i {display: inline;}
-  #mobilenav>header>h1 {display: none;}
+  #mobilenav>header>a>h1 {display: none;}
 }
