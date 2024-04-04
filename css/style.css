@@ -67,7 +67,6 @@ main>*, footer, body>div>div>* {
       h1>span:nth-child(4n-1) {color: var(--green);}
       h1>span:nth-child(4n) {color: var(--blue);}
       #statuser, #statcont, main>*>p:last-child, footer>p:last-child {margin: 0;}
-
   #middlecolumn {
     min-width: 16rem; max-width: 25rem;
     flex-grow: 1; flex-shrink: 1;
@@ -82,7 +81,7 @@ main>*, footer, body>div>div>* {
 #mobilenav>header{
   display: none; height: 3rem;
   box-sizing: border-box; padding: .5rem;
-  align-items: center; justify-content: space-between;
+  align-items: center;
 }
   #mobilenav>header>a>h1 {display: inline; margin: 0;}
   #mobilenav>header>button {
@@ -90,7 +89,8 @@ main>*, footer, body>div>div>* {
     padding: 0; color: var(--mono1);
   }
     #mobilenav>header>button>i, #mobilenav>header>a>i {font-size: 1.75rem;}
-    #mobilenav>header>a:last-child {text-decoration: none;}
+    #hamicon {margin-right: .5rem;}
+    #mobilenav>header>a:last-child {text-decoration: none; margin-left: auto;}
     #mobilenav>header>a>i {
       display: none;
       background-image: linear-gradient(90deg, var(--red), var(--yellow), var(--blue));
@@ -112,18 +112,15 @@ main>*, footer, body>div>div>* {
     background-color: var(--mono4);
   }
     #mobilenav>header{display: flex;}
-    #menuitems {
-      display: none; gap: 0; flex-direction: column-reverse;
-      height: 24rem; overflow-y: auto;
-      background-color: var(--mono3);
+      #mobilenav>header>a>i {display: inline;}
+    #menuitems>aside {display: none;}
+    #menuitems>nav {
+      height: 21rem; overflow-y: auto;
+      background-color: var(--mono4);
+      border: none; display: none;
     }
-      #menuitems>*{border: none;}
-      #menuitems>aside {text-align: center;}
-        #darkmode {width: 10rem; margin: 0 auto;}
 }
 
 @media screen and (max-width: 25em) {
   body {width:85%;}
-  #mobilenav>header>a>i {display: inline;}
-  #mobilenav>header>a>h1 {display: none;}
 }
