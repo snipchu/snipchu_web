@@ -55,12 +55,10 @@ main>*, footer, body>div>div>* {
   background-color: var(--mono4);
   padding: .5rem;
 }
-  body>div { width: 10rem; flex-shrink: 0; }
-    div>div {
-      position: sticky; top: 1rem;
-    }
+  body>div {width: 10rem; flex-shrink: 0;}
+    div>div {position: sticky; top: 1rem;}
       #darkmode {width:100%;}
-      nav>h2, aside>h2 { margin: 0; font-size: 1.25em; }
+      nav>h2, aside>h2 {margin: 0; font-size: 1.25em;}
       #snipchubutton {height: 31px; width: 88px; display: block; margin: auto;}
       h1>span:nth-child(4n-3) {color: var(--red);}
       h1>span:nth-child(4n-2) {color: var(--yellow);}
@@ -92,11 +90,9 @@ main>*, footer, body>div>div>* {
     #hamicon {margin-right: .5rem;}
     #mobilenav>header>a:last-child {text-decoration: none; margin-left: auto;}
     #mobilenav>header>a>i {
-      display: none;
       background-image: linear-gradient(90deg, var(--red), var(--yellow), var(--blue));
-      color: transparent; background-clip: text;
+      color: transparent; background-clip: text; display: none;
     }
-
 
 /* Tablet/Phone support */
 @media screen and (max-width: 40em) {
@@ -121,6 +117,4 @@ main>*, footer, body>div>div>* {
     }
 }
 
-@media screen and (max-width: 25em) {
-  body {width:85%;}
-}
+@media screen and (max-width: 25em) {body {width:85%;}}
