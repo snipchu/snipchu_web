@@ -1,0 +1,13 @@
+[darkmode] {
+  body {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+  }
+}
+body {
+  background-image: url("../../pics/shrines/bg-tmgc.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left;
+}
