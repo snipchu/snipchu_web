@@ -42,11 +42,14 @@ main>*, footer, body>div>div>* {
       #darkmode {width:100%;}
       nav>h2, aside>h2 {margin: 0;}
       #snipchubutton {height: 31px; width: 88px; display: block; margin: auto;}
-      h1>span:nth-child(4n-3) {color: var(--red);}
-      h1>span:nth-child(4n-2) {color: var(--yellow);}
-      h1>span:nth-child(4n-1) {color: var(--green);}
-      h1>span:nth-child(4n) {color: var(--blue);}
+      h1>span:nth-child(4n-3), h2>span:nth-child(4n-3) {color: var(--red);}
+      h1>span:nth-child(4n-2), h2>span:nth-child(4n-2) {color: var(--yellow);}
+      h1>span:nth-child(4n-1), h2>span:nth-child(4n-1)  {color: var(--green);}
+      h1>span:nth-child(4n), h2>span:nth-child(4n)  {color: var(--blue);}
       #statuscafe, main>*>p:last-child, footer>p:last-child {margin: 0;}
+      dd {margin-bottom: .5rem;}
+      .longword {word-wrap: break-word;}
+
   #middlecolumn {
     min-width: 16rem; max-width: 25rem;
     flex-grow: 1; flex-shrink: 1;
