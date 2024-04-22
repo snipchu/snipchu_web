@@ -23,6 +23,7 @@ hr {
   background: url("../pics/hr.png");
 }
 body>hr {display: none;}
+img {border-radius: .5rem;}
 
 body {
   display: flex; flex-direction: row;
