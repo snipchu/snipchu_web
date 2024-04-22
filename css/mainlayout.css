@@ -49,7 +49,7 @@ main>*, footer, body>div>div>* {
       h1>span:nth-child(4n), h2>span:nth-child(4n)  {color: var(--blue);}
       #statuscafe, main>*>p:last-child, footer>p:last-child {margin: 0;}
       dd {margin-bottom: .5rem;}
-      .longword {word-wrap: break-word;}
+      .longword, #statuscafe {word-wrap: break-word;}
 
   #middlecolumn {
     min-width: 16rem; max-width: 25rem;
