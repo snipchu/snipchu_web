@@ -67,7 +67,7 @@ li {margin-left: 1.5rem;}
     #menuitems>aside {display: none;}
     #menuitems>nav {
       padding: .5rem;
-      height: 21.5rem; overflow-y: auto;
+      height: 20rem; overflow-y: auto;
       background-color: var(--mono2);
       border: none; display: none;
     }

@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale=1.0">
-    <meta name="description" content="The index page for Nicke's personal website.">
+    <meta name="description" content="The directory page for technology on Nicke's personal website.">
     <link rel="icon" type="image/x-icon" href="./pics/favicon.gif">
     <link rel="stylesheet" type="text/css" media="all" href="/css/style.css">
     <link rel="stylesheet" type="text/css" media="all" href="/css/mainlayout.css">
@@ -12,7 +12,33 @@
     <script async src="./js/letterize.min.js"></script>
     <title>bunnyguy island</title>
     <style>
-      header>img { width: 100%; display: block; aspect-ratio: 3/1.5; }
+      .pagelist {
+        margin: 0; padding: 0;
+        list-style: none;
+        display: flex; gap: .5rem;
+        flex-wrap: wrap;
+      }
+      .pagelist>li {
+        margin: 0; padding: 0; display: flex;
+        flex-basis: 10rem; flex-grow: 1;
+        border-radius: .5rem;
+      }
+      .pagelist>li>a { 
+        width: auto; display: inline-block; padding: 1rem;
+        color: var(--mono2); font-weight: bold; flex-grow: 1;
+        border-radius: .5rem;
+      }
+      .pagelist>li:not(:nth-child(4))>a {background-color: rgba(0,0,0,.2);}
+      .pagelist>li:not(:nth-child(4))>a:hover {background-color: rgba(0,0,0,.4);}
+      .pagelist>li:nth-child(4)>a:hover {background-color: rgba(0,0,0,.2);}
+      [darkmode] {
+        .pagelist>li>a {background-color: rgba(0,0,0,0);}
+        .pagelist>li>a:hover {background-color: rgba(0,0,0,.2);}
+      }
+      .pagelist>li:nth-child(1) {background-color: var(--red);}
+      .pagelist>li:nth-child(2) {background-color: var(--yellow);}
+      .pagelist>li:nth-child(3) {background-color: var(--green);}
+      .pagelist>li:nth-child(4) {background-color: var(--blue);}
     </style>
   </head>
   
@@ -56,17 +82,32 @@
     <div id="middlecolumn">
       <main>
         <header>
-          <h1 aria-label="bunnyguy island">bunnyguy island</h1>
-          <img src="./pics/boat.png" alt="A pixel art drawing of Bunnyguy sailing on a fishing boat in the sunrise.">
+          <h1 aria-label="technology">technology</h1>
+          <p>ive always loved technology and coding! as a kid i wasnt given many pointers on <i>how</i> to start despite have plenty of resources lol.</p>
+          <p>high school was basically my starting point for fostering my love for technology.. so thank you to everybody in 184B who has help me grow! you guys are the best!</p>
         </header>
-        <section>
-          <h2 aria-label="Welcome!">Welcome!</h2>
-          <p>Thank you for visiting this self-indulgent website I like to call <i>Bunnyguy Island</i>. Here I basically just mess around with webdev and ramble about my life to my heart's content. It's nice to meet you!</p>
-          <p>As with all personal websites, this website is forever unfinished and a work in progress. Expect missing pages and broken links. If you find an error or typo while touring this website, feel free to <a href="">contact me</a>.</p>
-          <p>I honestly don't have much to say here so feel free to look wherever* and have a good day!</p>
-          <small>*to all of my IRL friends, i am begging you please click off or i will die of embarrassment</small>
+
+        <section id="software">
+          <h2 aria-label="Software">Software</h2>
+          <p>(my favorite software and code tidbits!)</p>
+          <nav><ul class="pagelist">
+            <li><a href="./tech/linux.html">linux</a></li>
+            <li><a href="./tech/privacy.html">privacy</a></li>
+            <li><a href="./tech/gamedev.html">game dev</a></li>
+            <li><a href="./tech/guitui.html">gui and tui</a></li>
+          </ul></nav>
         </section>
-      </main>
+
+        <section id="hardware">
+          <h2 aria-label="Hardware">Hardware</h2>
+          <p>(stuff that goes hand in hand with robotics!)</p>
+          <nav><ul class="pagelist">
+            <li><a href="./tech/roboboat.html">roboboat</a></li>
+            <li><a href="./tech/circuits.html">circuits</a></li>
+            <li><a href="./tech/hamradio.html">ham radio</a></li>
+          </ul></nav>
+        </section>
+
       <footer>
         <p>This website was made with love by <a href="./about.html#contact">Nicke</a>.<br>Hosted on <a href="https://neocities.org">Neocities</a> since April 14, 2023.</p>
       </footer>
@@ -75,6 +116,13 @@
     <hr>
 
     <div><div>
+      <nav id="pagenav">
+        <h2 aria-label="Navigation">Navigation</h2>
+        <ul>
+          <li><a href="#software">Software</a></li>
+          <li><a href="#hardware">Hardware</a></li>
+        </ul>
+      </nav>
       <aside>
         <h2 aria-label="Link back">Link back</h2>
         <p>Make sure to <a href="https://neocities.org/site_files/hotlinking">not hotlink</a>!</p>

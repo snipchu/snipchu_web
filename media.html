@@ -12,33 +12,33 @@
     <script async src="./js/letterize.min.js"></script>
     <title>bunnyguy island</title>
     <style>
-      #pagelist {
+      .pagelist {
         margin: 0; padding: 0;
         list-style: none;
         display: flex; gap: .5rem;
         flex-wrap: wrap;
       }
-      #pagelist>li {
+      .pagelist>li {
         margin: 0; padding: 0; display: flex;
         flex-basis: 10rem; flex-grow: 1;
         border-radius: .5rem;
       }
-      #pagelist>li>a { 
+      .pagelist>li>a { 
         width: auto; display: inline-block; padding: 1rem;
         color: var(--mono2); font-weight: bold; flex-grow: 1;
         border-radius: .5rem;
       }
-      #pagelist>li:not(:nth-child(4))>a {background-color: rgba(0,0,0,.2);}
-      #pagelist>li:not(:nth-child(4))>a:hover {background-color: rgba(0,0,0,.4);}
-      #pagelist>li:nth-child(4)>a:hover {background-color: rgba(0,0,0,.2);}
+      .pagelist>li:not(:nth-child(4))>a {background-color: rgba(0,0,0,.2);}
+      .pagelist>li:not(:nth-child(4))>a:hover {background-color: rgba(0,0,0,.4);}
+      .pagelist>li:nth-child(4)>a:hover {background-color: rgba(0,0,0,.2);}
       [darkmode] {
-        #pagelist>li>a {background-color: rgba(0,0,0,0);}
-        #pagelist>li>a:hover {background-color: rgba(0,0,0,.2);}
+        .pagelist>li>a {background-color: rgba(0,0,0,0);}
+        .pagelist>li>a:hover {background-color: rgba(0,0,0,.2);}
       }
-      #pagelist>li:nth-child(1) {background-color: var(--red);}
-      #pagelist>li:nth-child(2) {background-color: var(--yellow);}
-      #pagelist>li:nth-child(3) {background-color: var(--green);}
-      #pagelist>li:nth-child(4) {background-color: var(--blue);}
+      .pagelist>li:nth-child(1) {background-color: var(--red);}
+      .pagelist>li:nth-child(2) {background-color: var(--yellow);}
+      .pagelist>li:nth-child(3) {background-color: var(--green);}
+      .pagelist>li:nth-child(4) {background-color: var(--blue);}
     </style>
   </head>
   
@@ -74,8 +74,6 @@
           <ul>
             <li><a href="/shrines/portal2.html">portal 2</a></li>
             <li><a href="/shrines/tmgc.html">tamagotchi</a></li>
-            <li><a href="/shrines/molcar.html">pui pui molcar</a></li>
-            <li><a href="/shrines/md.html">murder drones</a></li>
           </ul>
         </nav>
       </div>
@@ -85,16 +83,25 @@
       <main>
         <header>
           <h1 aria-label="media and art">media and art</h1>
-          <p>despite labelling myself as a so-called tech nerd... I actually wanted to pursue art as a kid!</p>
-          <p>I used to draw a lot in the hopes of becoming a freelance artist. Nowadays, I don't draw much anymore, and when I do, it's usually self-indulgent.</p>
+          <p>i like calling myself a tech nerd... but actually i used to be (i still kinda am) an art kid!</p>
+          <p>my childhood was spent drawing constantly in hopes of becoming a freelance artist. thats not my dream anymore but i still love to make art for myself!</p>
         </header>
-        <section id="pages">
-          <h2 aria-label="Pages">Pages</h2>
-          <nav><ul id="pagelist">
-            <li><a href="./media/drawings.html">drawings</a></li>
+        <section id="2dart">
+          <h2 aria-label="2D artwork">2D artwork</h2>
+          <nav><ul class="pagelist">
+            <li><a href="./media/traditional.html">traditional</a></li>
+            <li><a href="./media/digital.html">digital</a></li>
+            <li><a href="./media/comics.html">comics</a></li>
             <li><a href="./media/anims.html">animations</a></li>
+          </ul></nav>
+        </section>
+
+        <section id="3dart">
+          <h2 aria-label="3D artwork">3D artwork</h2>
+          <p>(More coming... Who knows!)</p>
+          <nav><ul class="pagelist">
             <li><a href="./media/sewing.html">sewing</a></li>
-            <li><a href="./media/other.html">other</a></li>
+            <li><a href="./media/clay.html">clay</a></li>
           </ul></nav>
         </section>
 
@@ -106,6 +113,13 @@
     <hr>
 
     <div><div>
+      <nav id="pagenav">
+        <h2 aria-label="Navigation">Navigation</h2>
+        <ul>
+          <li><a href="#2dart">2D artwork</a></li>
+          <li><a href="#3dart">3D artwork</a></li>
+        </ul>
+      </nav>
       <aside>
         <h2 aria-label="Link back">Link back</h2>
         <p>Make sure to <a href="https://neocities.org/site_files/hotlinking">not hotlink</a>!</p>
