@@ -55,7 +55,7 @@ li {margin-left: 1.5rem;}
 
 /* Tablet/Phone support */
 @media screen and (max-width: 40em) {
-  body {margin-top: 3.5rem;}
+  body {margin-top: 3.5rem !important;}
   #mobilenav {
     position: fixed; z-index: 1;
     top: 0; left: 0; width: 100%;

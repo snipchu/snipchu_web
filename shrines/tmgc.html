@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" media="all" href="/css/style.css">
     <link rel="stylesheet" type="text/css" media="all" href="/css/shrines/tmgc.css">
     <script async src="/js/mobilenav.js"></script>
+    <script async src="/js/tmgc.js"></script>
+    <script async src="/js/letterize.min.js"></script>
     <title>bunnyguy island</title>
   </head>
   
@@ -50,9 +52,101 @@
     </div>
 
     <main>
-      <h1>tamagotchi</h1>
-      <p>Ummm... this page still WIP. Don't worry. something will be here soon <:)</p>
+      <article class="index">
+        <h1>Index</h1>
+      </article>
+
+      <article class="collection">
+        <h1>The Egg Carton</h1>
+        <table>
+          <tr>
+            <td><img class="tamashells" src="/pics/shrines/p1blue.png"></td>
+            <td>
+              <h2>Tamagotchi P2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt augue interdum velit euismod in.</p>
+            </td>
+            <td>
+              <h2>Stats</h2>
+              <ul>
+                <li>Date received: __/__/__</li>
+                <li>Shell type: "Blue with Silver"</li>
+                <li>Runs: 3</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><img class="tamashells" src="/pics/shrines/p1blue.png"></td>
+            <td>
+              <h2>Tamagotchi Pix Party</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt augue interdum velit euismod in.</p>
+            </td>
+            <td>
+              <h2>Stats</h2>
+              <ul>
+                <li>Date received: July 8, 2023</li>
+                <li>Shell type: "Confetti"</li>
+                <li>Runs: 3</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><img class="tamashells" src="/pics/shrines/p1blue.png"></td>
+            <td>
+              <h2>Entama</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt augue interdum velit euismod in.</p>
+            </td>
+            <td>
+              <h2>Stats</h2>
+              <ul>
+                <li>Date received: April 26, 2024</li>
+                <li>Shell type: "Beads White"</li>
+                <li>Runs: 3</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </article>
+
+      <article class="logs">
+        <h1>Tama Logs</h1>
+      </article>
+
+      <article class="guides">
+        <h1>Guides</h1>
+      </article>
     </main>
+
+    <div id="sideholder">
+      <img id="navpic" src="/pics/boat.png">
+      <nav><ul id="tabs">
+        <li class="navtab"><button onClick="openTab('index')">Index</button></li>
+        <li class="navtab"><button onClick="openTab('collection')">Collection</button></li>
+        <li class="navtab"><button onClick="openTab('logs')">Tama Logs</button></li>
+        <li class="navtab"><button onClick="openTab('guides')">Guides</button></li>
+      </ul></nav>
+      <nav>
+        <ul class="index">
+          <li><a href="">Index</a></li>
+          <li><a href="">Index</a></li>
+        </ul>
+
+        <ul class="collection">
+          <li><a href="">Index</a></li>
+          <li><a href="">Index</a></li>
+        </ul>
+
+        <ul class="logs">
+          <li><a href="">Index</a></li>
+          <li><a href="">Index</a></li>
+        </ul>
+
+        <ul class="guides">
+          <li><a href="">Index</a></li>
+          <li><a href="">Index</a></li>
+        </ul>
+      </nav>
+
+    </div>
     <script src="/js/colortheme.js"></script>
   </body>
 

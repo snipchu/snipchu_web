@@ -1,13 +1,55 @@
 [darkmode] {
-  body {
+  html {
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
   }
 }
-body {
+html {
   background-image: url("../../pics/shrines/bg-tmgc.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: left;
+}
+
+h1>span:nth-child(4n-3), h2>span:nth-child(4n-3) {color: var(--red);}
+h1>span:nth-child(4n-2), h2>span:nth-child(4n-2) {color: var(--yellow);}
+h1>span:nth-child(4n-1), h2>span:nth-child(4n-1)  {color: var(--green);}
+h1>span:nth-child(4n), h2>span:nth-child(4n)  {color: var(--blue);}
+#navheader {display: inline-block;}
+.index, .collection, .logs, .guides {display: none;}
+.index {display: block;}
+
+body {
+  width: 50%; margin: auto;
+  background-color: white;
+  margin-top: 1rem;
+  padding: .5rem; display: flex;
+}
+body>* {border: 1px solid black;}
+
+main {flex-grow: 1; flex-shrink: 1;}
+  #collection>table>tbody {text-align: center;}
+  .tamashells {width: 5rem;}
+
+#sideholder {
+  flex-grow: 0; flex-shrink: 0;
+  width: 12rem;
+}
+  #navpic { width: 100%; box-sizing: border-box; aspect-ratio: 3/1.5; }
+  #tabs {
+    margin: 0; padding: 0;
+    column-count: 2; gap: .5rem;
+  }
+    #tabs>li {margin: 0; padding: 0; list-style: none;}
+    #tabs>li>button {
+      width: 100%; height: 100%;
+      margin: .5rem 0 0 0; padding: 0;
+      background-color: gray; border-radius: 0;
+    }
+
+@media screen and (max-width: 40em) {
+  body {width: 60%; flex-direction: column;}
+  #sideholder {width: auto; order: 1;}
+  main {order: 2;}
 }
