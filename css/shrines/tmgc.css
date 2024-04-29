@@ -16,6 +16,7 @@ h1>span:nth-child(4n-3), h2>span:nth-child(4n-3) {color: var(--red);}
 h1>span:nth-child(4n-2), h2>span:nth-child(4n-2) {color: var(--yellow);}
 h1>span:nth-child(4n-1), h2>span:nth-child(4n-1)  {color: var(--green);}
 h1>span:nth-child(4n), h2>span:nth-child(4n)  {color: var(--blue);}
+h1 {font-size: 2rem; text-align: center;}
 #navheader {display: inline-block;}
 .index, .collection, .logs, .guides {display: none;}
 .index {display: block;}
@@ -29,12 +30,15 @@ body {
 body>* {border: 1px solid black;}
 
 main {flex-grow: 1; flex-shrink: 1;}
-  #collection>table>tbody {text-align: center;}
-  .tamashells {width: 5rem;}
+  .tamashells {width: 6rem;}
+  .collection>table>tbody>tr>td:last-child {padding: .5rem; }
 
 #sideholder {
   flex-grow: 0; flex-shrink: 0;
   width: 12rem;
+}
+#sideholder>div {
+  position: sticky; top: .5rem;
 }
   #navpic { width: 100%; box-sizing: border-box; aspect-ratio: 3/1.5; }
   #tabs {
@@ -47,6 +51,11 @@ main {flex-grow: 1; flex-shrink: 1;}
       margin: .5rem 0 0 0; padding: 0;
       background-color: gray; border-radius: 0;
     }
+
+@media screen and (max-width: 60em) {
+  body {width: 70%;}
+  #sideholder {width: 10rem;}
+}
 
 @media screen and (max-width: 40em) {
   body {width: 60%; flex-direction: column;}

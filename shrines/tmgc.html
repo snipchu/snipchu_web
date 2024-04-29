@@ -64,9 +64,6 @@
             <td>
               <h2>Tamagotchi P2</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt augue interdum velit euismod in.</p>
-            </td>
-            <td>
-              <h2>Stats</h2>
               <ul>
                 <li>Date received: __/__/__</li>
                 <li>Shell type: "Blue with Silver"</li>
@@ -79,9 +76,6 @@
             <td>
               <h2>Tamagotchi Pix Party</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt augue interdum velit euismod in.</p>
-            </td>
-            <td>
-              <h2>Stats</h2>
               <ul>
                 <li>Date received: July 8, 2023</li>
                 <li>Shell type: "Confetti"</li>
@@ -94,9 +88,6 @@
             <td>
               <h2>Entama</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt augue interdum velit euismod in.</p>
-            </td>
-            <td>
-              <h2>Stats</h2>
               <ul>
                 <li>Date received: April 26, 2024</li>
                 <li>Shell type: "Beads White"</li>
@@ -109,6 +100,45 @@
 
       <article class="logs">
         <h1>Tama Logs</h1>
+        <div>
+          <select class="filterbutton" onchange="filterItems(this)">
+            <option value="alllogs">Select version:</option>
+            <option value="p2bws">P2: "Blue with Silver"</option>
+            <option value="pixpc">Pix Party: "Confetti"</option>
+            <option value="enbw">Entama : "Beads White"</option>
+          </select>
+          <select class="filterbutton" onchange="filterItems(this)">
+            <option value="alllogs">Select adult:</option>
+            <option value="mimitchi">Mimtchi</option>
+            <option value="zuccitchi">Zuccitchi</option>
+            <option value="neliatchi">Neliatchi</option>
+            <option value="chamametchi">Chamametchi</option>
+            <option value="ninjanyatchi">Ninjanyatchi</option>
+            <option value="death">Dead before adult :(</option>
+          </select>
+        </div>
+        <table id="loglist">
+          <tr>
+            <td>Name</td>
+            <td>Date</td>
+            <td>Version</td>
+          </tr>
+          <tr class="alllogs p2bws mimitchi">
+            <td>Mimitchi</td>
+            <td>May 17, 2023 - June 3, 2023</td>
+            <td>P2: "Blue with Silver"</td>
+          </tr>
+          <tr class="alllogs p2bws">
+            <td>?</td>
+            <td>June 27, 2023 - ?</td>
+            <td>P2: "Blue with Silver"</td>
+          </tr>
+          <tr class="alllogs pixpc">
+            <td>?</td>
+            <td>June 27, 2023 - ?</td>
+            <td>Pix Party: "Confetti"</td>
+          </tr>
+        </table>
       </article>
 
       <article class="guides">
@@ -116,7 +146,7 @@
       </article>
     </main>
 
-    <div id="sideholder">
+    <div id="sideholder"><div>
       <img id="navpic" src="/pics/boat.png">
       <nav><ul id="tabs">
         <li class="navtab"><button onClick="openTab('index')">Index</button></li>
@@ -145,8 +175,7 @@
           <li><a href="">Index</a></li>
         </ul>
       </nav>
-
-    </div>
+    </div></div>
     <script src="/js/colortheme.js"></script>
   </body>
 
