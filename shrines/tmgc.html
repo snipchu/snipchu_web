@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" media="all" href="/css/shrines/tmgc.css">
     <script async src="/js/mobilenav.js"></script>
     <script async src="/js/tmgc.js"></script>
-    <script async src="/js/letterize.min.js"></script>
     <title>bunnyguy island</title>
   </head>
   
@@ -57,41 +56,55 @@
       </article>
 
       <article class="collection">
-        <h1>The Egg Carton</h1>
+        <h1>Collection</h1>
+        <p>this is the collection page all of my tamas... I love them all dearly! (none are for sale)</p>
+        <p>The pixel art is drawn by me! Please don't reupload them without my permission. Thanks! :)</p>
         <table>
-          <tr>
-            <td><img class="tamashells" src="/pics/shrines/p1blue.png"></td>
+          <tr id="linkp2bws">
+            <td><img class="tamashells" src="/pics/shrines/p1bws.png"></td>
             <td>
-              <h2>Tamagotchi P2</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt augue interdum velit euismod in.</p>
+              <h2>Original P2</h2>
+              <p>This was the first tamagotchi I ever got! I persuaded my dad to let me buy a P2 off of Amazon (Thanks dad!). I opened it up and started playing with it in my older sister's room.</p>
+              <p>During this time I was mainly interested in Vpets, but Tamagotchi wasn't one of my main interests at the time.</p>
               <ul>
-                <li>Date received: __/__/__</li>
+                <li>Date received: Somewhere in 2019</li>
                 <li>Shell type: "Blue with Silver"</li>
-                <li>Runs: 3</li>
               </ul>
             </td>
           </tr>
-          <tr>
-            <td><img class="tamashells" src="/pics/shrines/p1blue.png"></td>
+          <tr id="linkpixpc">
+            <td><img class="tamashells" src="/pics/shrines/p1bws.png"></td>
             <td>
-              <h2>Tamagotchi Pix Party</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt augue interdum velit euismod in.</p>
+              <h2>Pix Party</h2>
+              <p>I got this one when I went to California (to celebrate a wedding). I was super fixated on Tamagotchi and a rich cousin of mine bought it for me... She wouldn't let me pay, so I drew her some Kakashi fanart for her instead.</p>
+              <p>I started playing with it after I returned from California. I have a bunch of memorable pictures on it! Maybe I'll take some more sometime.</p>
               <ul>
                 <li>Date received: July 8, 2023</li>
                 <li>Shell type: "Confetti"</li>
-                <li>Runs: 3</li>
               </ul>
             </td>
           </tr>
-          <tr>
-            <td><img class="tamashells" src="/pics/shrines/p1blue.png"></td>
+          <tr id="linkenbw">
+            <td><img class="tamashells" src="/pics/shrines/entamabw.png"></td>
             <td>
               <h2>Entama</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt augue interdum velit euismod in.</p>
+              <p>My hyperfixated with Tamagotchi came up a third time. Dad gave in to my pleading and let me buy not one, but two tamas (This one and the keitai)!</p>
+              <p>My sisters (and older sister's friends) watched me open it up. I screamed maybe a bit too loud.</p>
+              <p>The entama originally came in really sun damaged, but I followed a retrobright tutorial and it worked wonderfully!</p>
               <ul>
                 <li>Date received: April 26, 2024</li>
                 <li>Shell type: "Beads White"</li>
-                <li>Runs: 3</li>
+              </ul>
+            </td>
+          </tr>
+          <tr id="linkktwc">
+            <td><img class="tamashells" src="/pics/shrines/keitaiwc.png"></td>
+            <td>
+              <h2>Keitai</h2>
+              <p>This was the second of the two tamas I bought off eBay! It came in really good condition (and a LOT of bubble wrap). There's also some little charm with it. I'm not sure what the characters are, but they're really cute!</p>
+              <ul>
+                <li>Date received: April 29, 2024</li>
+                <li>Shell type: "White Clover"</li>
               </ul>
             </td>
           </tr>
@@ -106,6 +119,7 @@
             <option value="p2bws">P2: "Blue with Silver"</option>
             <option value="pixpc">Pix Party: "Confetti"</option>
             <option value="enbw">Entama : "Beads White"</option>
+            <option value="ktwc">Keitai : "White Clover"</option>
           </select>
           <select class="filterbutton" onchange="filterItems(this)">
             <option value="alllogs">Select adult:</option>
@@ -161,8 +175,10 @@
         </ul>
 
         <ul class="collection">
-          <li><a href="">Index</a></li>
-          <li><a href="">Index</a></li>
+          <li><a href="#linkp2bws">P2</a></li>
+          <li><a href="#linkpixpc">Pix Party</a></li>
+          <li><a href="#linkenbw">Entama</a></li>
+          <li><a href="#linkktwc">Keitai</a></li>
         </ul>
 
         <ul class="logs">
