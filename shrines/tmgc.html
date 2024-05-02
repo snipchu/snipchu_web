@@ -53,6 +53,15 @@
     <main>
       <article class="index">
         <h1>Index</h1>
+        <p>welcome to The Tama Shrine</p>
+        <h2 id="intro">My introduction to Tama Planet</h2>
+        <h2 id="favs">Favorites</h2>
+        <h3>favorite characters</h3>
+        <ul>
+          <li>Mimitchi</li>
+          <li>Zuccitchi</li>
+          <li>Maskutchi</li>
+        </ul>
       </article>
 
       <article class="collection">
@@ -61,7 +70,7 @@
         <p>The pixel art is drawn by me! Please don't reupload them without my permission. Thanks! :)</p>
         <table>
           <tr id="linkp2bws">
-            <td><img class="tamashells" src="/pics/shrines/p1bws.png"></td>
+            <td><img class="tamashells" src="/pics/shrines/p1bws.png" alt="A blue and silver Tamagotchi P2."></td>
             <td>
               <h2>Original P2</h2>
               <p>This was the first tamagotchi I ever got! I persuaded my dad to let me buy a P2 off of Amazon (Thanks dad!). I opened it up and started playing with it in my older sister's room.</p>
@@ -73,7 +82,7 @@
             </td>
           </tr>
           <tr id="linkpixpc">
-            <td><img class="tamashells" src="/pics/shrines/p1bws.png"></td>
+            <td><img class="tamashells" src="/pics/shrines/p1bws.png" alt="A pink and cyan colored Tamagotchi Pix Party."></td>
             <td>
               <h2>Pix Party</h2>
               <p>I got this one when I went to California (to celebrate a wedding). I was super fixated on Tamagotchi and a rich cousin of mine bought it for me... She wouldn't let me pay, so I drew her some Kakashi fanart for her instead.</p>
@@ -85,7 +94,7 @@
             </td>
           </tr>
           <tr id="linkenbw">
-            <td><img class="tamashells" src="/pics/shrines/entamabw.png"></td>
+            <td><img class="tamashells" src="/pics/shrines/entamabw.png" alt="A white Entama covered in pink, blue, and green balls."></td>
             <td>
               <h2>Entama</h2>
               <p>My hyperfixated with Tamagotchi came up a third time. Dad gave in to my pleading and let me buy not one, but two tamas (This one and the keitai)!</p>
@@ -98,7 +107,7 @@
             </td>
           </tr>
           <tr id="linkktwc">
-            <td><img class="tamashells" src="/pics/shrines/keitaiwc.png"></td>
+            <td><img class="tamashells" src="/pics/shrines/keitaiwc.png" alt="A white and green Tamagotchi Keitai covered in green four-leaf clovers."></td>
             <td>
               <h2>Keitai</h2>
               <p>This was the second of the two tamas I bought off eBay! It came in really good condition (and a LOT of bubble wrap). There's also some little charm with it. I'm not sure what the characters are, but they're really cute!</p>
@@ -142,15 +151,10 @@
             <td>May 17, 2023 - June 3, 2023</td>
             <td>P2: "Blue with Silver"</td>
           </tr>
-          <tr class="alllogs p2bws">
+          <tr class="alllogs ktwc">
             <td>?</td>
-            <td>June 27, 2023 - ?</td>
-            <td>P2: "Blue with Silver"</td>
-          </tr>
-          <tr class="alllogs pixpc">
-            <td>?</td>
-            <td>June 27, 2023 - ?</td>
-            <td>Pix Party: "Confetti"</td>
+            <td>May 4, 2024 - </td>
+            <td>Keitai: "White Clover"</td>
           </tr>
         </table>
       </article>
@@ -161,6 +165,7 @@
     </main>
 
     <div id="sideholder"><div>
+      <button type="button" onClick="togglecolor()">Toggle dark mode</button>
       <img id="navpic" src="/pics/boat.png">
       <nav><ul id="tabs">
         <li class="navtab"><button onClick="openTab('index')">Index</button></li>
@@ -170,8 +175,8 @@
       </ul></nav>
       <nav>
         <ul class="index">
-          <li><a href="">Index</a></li>
-          <li><a href="">Index</a></li>
+          <li><a href="#intro">My introduction to the Tama Planet</a></li>
+          <li><a href="#favs">Favorites</a></li>
         </ul>
 
         <ul class="collection">
@@ -187,8 +192,10 @@
         </ul>
 
         <ul class="guides">
-          <li><a href="">Index</a></li>
-          <li><a href="">Index</a></li>
+          <li><a href="">P2 Guide</a></li>
+          <li><a href="">Pix Party Guide</a></li>
+          <li><a href="">Keitai Guide</a></li>
+          <li><a href="">Entama Guide</a></li>
         </ul>
       </nav>
     </div></div>
