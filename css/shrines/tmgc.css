@@ -67,7 +67,7 @@ body {
   body {flex-direction: column;}
   #sideholder {width: auto; order: 1;}
   main {order: 2;}
-  #sideholder>div>button:first-child {display: none;}
+  #sideholder>div>*:nth-child(-n+2) {display: none;}
   #logfilters>label>select {min-width: 0;}
   .tamashells {padding: 0 .5rem;}
 }
