@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang=en>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <meta name="description" content="Animations on Nicke's personal website.">
+    <link rel="icon" type="image/x-icon" href="/pics/favicon.gif">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/media.css">
+    <script async src="/js/mobilenav.js"></script>
+    <script async src="/js/media.js"></script>
+    <title>bunnyguy island</title>
+  </head>
+  
+  <body onload="onload()">
+    <div id="mobilenav">
+      <header>
+        <button id="hamburgermenu" type="button" onClick="showmenu()" aria-label="Hamburger menu button"><i id="hamicon" class="nf nf-md-menu"></i></button>
+        <button type="button" onClick="togglecolor()" aria-label="Toggle dark mode"><i class="nf nf-md-white_balance_sunny"></i></button>
+        <a href="#top" aria-label="Go to the top of the page"><i class="nf nf-md-rabbit_variant"></i></a>
+      </header>
+      <div id="menuitems">
+        <aside>
+          <button id="darkmode" type="button" onClick="togglecolor()">Toggle dark mode</button>
+        </aside>
+        <nav>
+          <h2>index</h2>
+          <ul>
+            <li><a href="/index.html">homepage</a></li>
+            <li><a href="/about.html">about me</a></li>
+            <li><a href="/media.html">media</a></li>
+            <li><a href="/tech.html">technology</a></li>
+            <li><a href="/site.html">the site</a></li>
+          </ul>
+          <h2>journal</h2>
+          <ul>
+            <li><a href="/journal/thoughts.html">headthoughts</a></li>
+            <li><a href="/journal/reviews.html">reviews</a></li>
+            <li><a href="">daily life</a></li>
+            <li><a href="/journal/gallery.html">gallery</a></li>
+          </ul>
+          <h2>shrines</h2>
+          <ul>
+            <li><a href="/shrines/portal2.html">portal 2</a></li>
+            <li><a href="/shrines/tmgc.html">tamagotchi</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <aside id="sidebar"><div>
+      <nav>
+        <h2>2024</h2>
+        <ul>
+          <li><button type="button" onClick="filterpics('mar24')">March</button></li>
+          <li><button type="button" onClick="filterpics('apr24')">April</button></li>
+          <li><button type="button" onClick="filterpics('may24')">May</button></li>
+        </ul>
+      </nav>
+    </div></aside>
+
+    <main>
+      <h1 id="header">Digital Artwork</h1>
+      <div><ul>
+        <li><button type="button" onClick="filterpics('commission')">Commissioned art</button></li>
+        <li><button type="button" onClick="filterpics('personal')">Personal art</button></li>
+      </ul></div>
+      <figure id="artworkfigure" aria-labelledby="header">
+        <figure class="apr24 commission">
+          <img src="./4_27_24.png" alt="A horde of cats sitting under a street light.">
+          <figcaption>4/27/2024 - Commission for <a href="https://apocalypse.hackclub.com">Apocalypse</a>'s TCG)</figcaption>
+        </figure>
+        <figure class="apr24 commission">
+          <img src="./4_27_24_2.png" alt="An otter relaxing in a pond with koi fish and lilypads.">
+          <figcaption>4/27/2024 - Commission for <a href="https://apocalypse.hackclub.com">Apocalypse</a>'s TCG)</figcaption>
+        </figure>
+        <figure class="may24 personal">
+          <img src="./5_6_24.png" alt="MS paint drawing of a happy white dinosaur surrounded by hearts.">
+          <figcaption>5/6/2024 - Hack Club slack emoji (:orpheus_love:).</figcaption>
+        </figure>
+        <figure class="may24 personal">
+          <img src="./5_14_24.png" alt="A bunny with a black tophat, a monocle, and a yellow bowtie gives a thumbs up.">
+          <figcaption>5/14/2024 - PFP Art</figcaption>
+        </figure>
+      </figure>
+    </main>
+    <script src="/js/colortheme.js"></script>
+  </body>
+
+</html>

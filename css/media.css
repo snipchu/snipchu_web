@@ -1,0 +1,31 @@
+body {
+  width: 60%; margin: auto;
+  border: 1px solid black;
+  display: flex;
+}
+
+#sidebar {
+  padding: .5rem; width: 20%; flex-shrink: 0;
+  border: 1px solid black;
+}
+#sidebar>div {position: sticky; top: .5rem;}
+main {padding: .5rem; flex-grow: 1;}
+h1 {display: block; width: 100%;}
+#artworkfigure {margin: 0; padding: 0; columns: 3;}
+#artworkfigure>figure {
+  display: inline-block;
+  width: 100%; box-sizing: border-box;
+  margin: 0 0 .5rem 0; padding: .5rem;
+  border: 1px solid black;
+}
+#artworkfigure>figure>img {width: 100%; display: block;}
+
+/* responsive.... */
+@media screen and (max-width: 70em) {#artworkfigure {columns: 2;}}
+@media screen and (max-width: 50em) {body {width:75%;}}
+@media screen and (max-width: 40em) {
+  body {flex-direction: column;}
+  #sidebar {width: 100%; box-sizing: border-box;}
+  #sidebar>div {top: 3.5rem;}
+  #artworkfigure {columns: 1;}
+}
