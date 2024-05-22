@@ -29,7 +29,7 @@
           <ul>
             <li><a href="/index.html">homepage</a></li>
             <li><a href="/about.html">about me</a></li>
-            <li><a href="/media.html">media</a></li>
+            <li><a href="/media">media</a></li>
             <li><a href="/tech.html">technology</a></li>
             <li><a href="/site.html">the site</a></li>
           </ul>
@@ -38,7 +38,7 @@
             <li><a href="/journal/thoughts.html">headthoughts</a></li>
             <li><a href="/journal/reviews.html">reviews</a></li>
             <li><a href="">daily life</a></li>
-            <li><a href="/journal/gallery.html">gallery</a></li>
+            <li><a href="/journal/gallery">gallery</a></li>
           </ul>
           <h2>shrines</h2>
           <ul>
@@ -50,40 +50,36 @@
     </div>
 
     <aside id="sidebar"><div>
-      <nav>
-        <h2>2024</h2>
-        <ul>
-          <li><button type="button" onClick="filterpics('mar24')">March</button></li>
-          <li><button type="button" onClick="filterpics('apr24')">April</button></li>
-          <li><button type="button" onClick="filterpics('may24')">May</button></li>
-        </ul>
-      </nav>
-    </div></aside>
-
-    <main>
-      <h1 id="header">Digital Artwork</h1>
       <div><ul>
         <li><button type="button" onClick="filterpics('commission')">Commissioned art</button></li>
         <li><button type="button" onClick="filterpics('personal')">Personal art</button></li>
       </ul></div>
+      <nav><ul>
+        <li><button type="button" onClick="filterpics('art2024')">2024</button></li>
+      </ul></nav>
+    </div></aside>
+
+    <main>
+      <h1 id="header">Digital Artwork</h1>
       <figure id="artworkfigure" aria-labelledby="header">
-        <figure class="apr24 commission">
+        <figure class="art2024 commission" onClick="openimg(this)">
           <img src="./4_27_24.png" alt="A horde of cats sitting under a street light.">
           <figcaption>4/27/2024 - Commission for <a href="https://apocalypse.hackclub.com">Apocalypse</a>'s TCG)</figcaption>
         </figure>
-        <figure class="apr24 commission">
+        <figure class="art2024 commission" onClick="openimg(this)">
           <img src="./4_27_24_2.png" alt="An otter relaxing in a pond with koi fish and lilypads.">
           <figcaption>4/27/2024 - Commission for <a href="https://apocalypse.hackclub.com">Apocalypse</a>'s TCG)</figcaption>
         </figure>
-        <figure class="may24 personal">
+        <figure class="art2024 personal" onClick="openimg(this)">
           <img src="./5_6_24.png" alt="MS paint drawing of a happy white dinosaur surrounded by hearts.">
           <figcaption>5/6/2024 - Hack Club slack emoji (:orpheus_love:).</figcaption>
         </figure>
-        <figure class="may24 personal">
+        <figure class="art2024 personal" onClick="openimg(this)">
           <img src="./5_14_24.png" alt="A bunny with a black tophat, a monocle, and a yellow bowtie gives a thumbs up.">
           <figcaption>5/14/2024 - PFP Art</figcaption>
         </figure>
       </figure>
+      <button id="closebutton" type="button" onClick="hideimg()" aria-label="Close image popup"><i class="nf nf-fa-close"></i></button>
     </main>
     <script src="/js/colortheme.js"></script>
   </body>
