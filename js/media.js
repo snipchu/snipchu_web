@@ -1,11 +1,12 @@
 function openimg(caller) {
-  figcapt = caller.lastElementChild;
+  figure = caller.firstElementChild;
+  figcapt = figure.lastElementChild;
   caller.id = "activepic"
-  closebutton.style.display = "block";
+  document.getElementById("closebutton").style.display="block";
 }
 
 function hideimg() {
   activepic = document.getElementById("activepic");
   activepic.id = ""
-  closebutton.style = "";
+  document.getElementById("closebutton").style.display="";
 }
