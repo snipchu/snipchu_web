@@ -10,3 +10,23 @@ function hideimg() {
   activepic.id = ""
   document.getElementById("closebutton").style.display="";
 }
+
+filterlist = [];
+function filteritems(classname) {
+  if (filterlist.includes(classname)) {
+    filterlist.splice(filterlist.indexOf(classname),1);
+  } else {
+    filterlist.push(classname);
+  }
+  figitems = document.getElementsByClassName("figitem");
+  for (i=0; i<figitems.length; i++) { figitems[i].style.display = "none";}
+  
+  filters = "";
+  for (i=0; i<filterlist.length; i++) {filters += filterlist[i] + " ";}
+  if (filterlist.length == 0) {
+    for (i=0; i<figitems.length; i++) { figitems[i].style.display = "";}
+  } else {
+    matching = document.getElementsByClassName(filters);
+    for (i=0; i<matching.length; i++) { matching[i].style.display = ""; }
+  }
+}

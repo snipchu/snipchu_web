@@ -3,10 +3,10 @@
 :root {
   --mono1: #3A3332;
   --mono2: #FEFAF6;
-  --red: #D34F46;
-  --yellow: #E46B1B;
-  --green: #7F911B;
-  --blue: #007C61;
+  --red: #C0392F;
+  --yellow: #C64D00;
+  --green: #697811;
+  --blue: #00634D;
 }
 [darkmode] {
   --mono1: #FEFAF6;
