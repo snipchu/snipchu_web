@@ -44,6 +44,7 @@
           <ul>
             <li><a href="/shrines/portal2.html">portal 2</a></li>
             <li><a href="/shrines/tmgc.html">tamagotchi</a></li>
+            <li><a href="/shrines/aa.html">ace attorney</a></li>
           </ul>
         </nav>
       </div>
@@ -65,6 +66,7 @@
       <details>
         <summary>Sort by type:</summary>
         <label><input type="checkbox" onClick="filteritems('pers')">Personal</label>
+        <label><input type="checkbox" onClick="filteritems('fan')">Fanart</label>
         <label><input type="checkbox" onClick="filteritems('com')">Commission</label>
       </details>
       <details>
@@ -81,6 +83,22 @@
       <p>If you'd like to commission me, please click <a href="">here</a> (link soon)!</p>
       <hr>
       <figure id="artworkfigure" aria-labelledby="header">
+        <button type="button" class="figitem art2024 dig pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./3_5_24.png" alt="A brown and white cat wearing a green bandana looks around.">
+          <figcaption>3/5/2024 - My very very old fursona i made in 2021(?). Her name is basil</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./3_14_24.png" alt="A white bunny sitting down.">
+          <figcaption>3/14/2024 - Some random bunnyguy doodle</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig fan pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./3_31_24.png" alt="A white and light brown cat wearing a navy blue vest and collar sitting down.">
+          <figcaption>3/31/2024 - Wheatley kitty... :D</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./4_11_24.png" alt="A white rabbit tinted pink. There's a smaller drawing of it holding an umbrella.">
+          <figcaption>4/11/2024 - Cherry blossom pink bunnyguy :D</figcaption>
+        </figure></button>
         <button type="button" class="figitem art2024 dig com" onClick="openimg(this)" aria-label="Expand image"><figure>
           <img src="./4_27_24.png" alt="A horde of cats sitting under a street light.">
           <figcaption>4/27/2024 - Commission for <a href="https://apocalypse.hackclub.com">Apocalypse</a>'s TCG)</figcaption>
@@ -90,12 +108,56 @@
           <figcaption>5/6/2024 - Hack Club Slack emoji (:orpheus_love:)</figcaption>
         </figure></button>
         <button type="button" class="figitem art2024 dig pers" onClick="openimg(this)" aria-label="Expand image"><figure>
-          <img src="./5_14_24.png" alt="A white bunny with a black top hat, yellow bow tie, and monocle gives a thumbs up. Some red underlined text in italics below reads 'Graphic design is my passion'.">
+          <img src="./5_14_24.png" alt="A white bunny gives a thumbs up. Some red underlined text in italics below reads 'Graphic design is my passion'.">
           <figcaption>5/14/2024 - Crudely made PFP art</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig anim fan pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./5_18_24.gif" alt="A white and light brown cat with a navy blue vest looks to the right.">
+          <figcaption>5/18/24 - Wheatley kitty :).. Used flipaclip for the first time in ages</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig anim pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./5_19_24.gif" alt="An animation of a white bunny shaking its hand excitedly.">
+          <figcaption>5/19/24 - Animation on Ibispaint I made at midnight</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig anim pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./5_24_24.gif" alt="Multiple short animated cutscenes of a white bunny.">
+          <figcaption>5/24/24 - Messing around with flipaclip</figcaption>
         </figure></button>
         <button type="button" class="figitem art2024 dig com" onClick="openimg(this)" aria-label="Expand image"><figure>
           <img src="./4_27_24_2.png" alt="An otter laying in a small pond containing lilypads and koi fish.">
           <figcaption>4/27/2024 - Commission for <a href="https://apocalypse.hackclub.com">Apocalypse</a>'s TCG)</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./6_6_24.jpg" alt="A bunch of grayscale doodles of a white bunny.">
+          <figcaption>6/6/24 - Bunnyguy doodles when I was bored</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./6_7_24.jpg" alt="4 dogs sitting together. There's two brown dogs (one is wearing a purple collar, and the other is wearing a blue tie), a shiba with a green bandana, and a husky with a pink bandana.">
+          <figcaption>6/7/24 - My friends as dogs</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./6_19_24.png" alt="A white bunny wearing a navy marine and beach outfit.">
+          <figcaption>6/19/2024 - Bunnyguy maritime and Roboboat outfit :]</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig fan pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./6_19_24_2.png" alt="Chibi drawings of Athena Cykes and Apollo Justice from Ace Attorney. A smaller drawing of a white bunny and the 'Objection!' speech bubble sits next to them.">
+          <figcaption>6/19/2024 - Ace Attorney fanart (Athena Cykes and Apollo Justice, my favorite characters)</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./6_20_24.png" alt="A reference sheet of a blue, purple, pink, and white robloxian wearing a helmet and jetpack.">
+          <figcaption>6/20/2024 - Reference sheet for Jetkid (an old Roblox OC I made in 2023)</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./6_20_24_2.png" alt="A reference sheet of a white bunny wearing a black bucket hat, a monocle, and a yellow bowtie.">
+          <figcaption>6/20/2024 - Reference sheet for the one and only Bunnyguy</figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./6_21_24_2.png" alt="A white bunny in a marine outfit. The name 'NICK' is written beside it in uppercase. The drawing is extremely saturated with lots of neons.">
+          <figcaption>6/21/2024 - Followed a <a href="https://www.youtube.com/watch?v=NKV2VWWleBk">hyperpop tutorial</a></figcaption>
+        </figure></button>
+        <button type="button" class="figitem art2024 dig fan pers" onClick="openimg(this)" aria-label="Expand image"><figure>
+          <img src="./6_28_24.jpg" alt="A chibi drawing of Phoenix Wright (from Ace Attorney) pointing to the left. The 'Objection!' speech bubble sits next to him.">
+          <figcaption>6/28/24 - Mini Phoenix Wright that suddenly became the prosecution</figcaption>
         </figure></button>
       </figure>
       <button id="closebutton" type="button" onClick="hideimg()" aria-label="Close image popup"><i class="nf nf-fa-close"></i></button>
