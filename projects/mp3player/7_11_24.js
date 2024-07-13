@@ -1,8 +1,8 @@
 const songlist = [
-  ["September", "Earth, Wind & Fire", "./September.mp3"],
-  ["Harvey","Her's","./Harvey.mp3"],
-  ["Spunky (Makoto's Stage)","Hideki Okugawa","./Spunky.mp3"],
-  ["Get Down On It", "Kool & The Gang", "./GetDownOnIt.mp3"]
+  ["September", "Earth, Wind & Fire", "https://github.com/snipchu/codefiles/raw/main/2024/7_11_24/September.mp3"],
+  ["Harvey","Her's","https://github.com/snipchu/codefiles/raw/main/2024/7_11_24/Harvey.mp3"],
+  ["Spunky (Makoto's Stage)","Hideki Okugawa","https://github.com/snipchu/codefiles/raw/main/2024/7_11_24/Spunky.mp3"],
+  ["Get Down On It", "Kool & The Gang", "https://github.com/snipchu/codefiles/raw/main/2024/7_11_24/GetDownOnIt.mp3"]
 ]
 songindex = 0;
 
