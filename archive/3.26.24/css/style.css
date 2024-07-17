@@ -1,0 +1,75 @@
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+
+:root {
+  --mono1: #3A3332;
+  --mono2: #FEFAF6;
+  --red: #C0392F;
+  --yellow: #C64D00;
+  --green: #697811;
+  --blue: #00634D;
+}
+[darkmode] {
+  --mono1: #FEFAF6;
+  --mono2: #3A3332;
+  --red: #EE917B;
+  --yellow: #FDC172;
+  --green: #ADB96C;
+  --blue: #73B0A3;
+  body {background-color: var(--mono2);}
+}
+@font-face {
+  font-family: "Inconsolata";
+  src: url(./Inconsolata.otf);
+  font-display: swap;
+}
+body {
+  font-family: Inconsolata, sans-serif;
+  background-color: var(--mono2);
+  color: var(--mono1);
+}
+h1,h2, h3, h4, h5, h6, p {margin: .5rem 0;}
+a {color: var(--blue)}
+a:hover, a:active {color: var(--green);}
+ul {margin: 0.25rem 0; padding: 0; list-style-type: "- "}
+li {margin-left: 1.5rem;}
+
+#mobilenav {display: none;}
+/* Mobile navbar */
+#mobilenav>header{
+  display: none; height: 3rem;
+  box-sizing: border-box; padding: .5rem;
+  align-items: center;
+}
+  #mobilenav>header>a>h1 {display: inline; margin: 0;}
+  #mobilenav>header>button {
+    background-color: transparent; border: none;
+    padding: 0; color: var(--mono1);
+  }
+    #mobilenav>header>button>i, #mobilenav>header>a>i {font-size: 1.75rem;}
+    #hamicon {margin-right: .5rem;}
+    #mobilenav>header>a:last-child {text-decoration: none; margin-left: auto;}
+    #mobilenav>header>a>i {
+      background-image: linear-gradient(90deg, var(--red), var(--yellow), var(--blue));
+      color: transparent; background-clip: text; display: none;
+    }
+
+/* Tablet/Phone support */
+@media screen and (max-width: 40em) {
+  body {margin-top: 3.5rem !important;}
+  #mobilenav {
+    position: fixed; z-index: 1;
+    top: 0; left: 0; width: 100%;
+    background-color: var(--mono2);
+    display: block;
+  }
+    #mobilenav>header{display: flex;}
+      #mobilenav>header>a>i {display: inline;}
+    #menuitems>aside {display: none;}
+    #menuitems>nav {
+      padding: .5rem; height: 100%;
+      overflow-y: auto;
+      background-color: var(--mono2);
+      border: none; display: none;
+    }
+    #menuitems>nav>h2 {margin: 0;}
+}
