@@ -1,0 +1,19 @@
+body {
+  width: 75%; margin: auto;
+  border: 1px solid black;
+}
+
+/* header */
+header {border: 1px solid black;}
+header>aside {max-width: 100%; display: inline-block;}
+
+/* main */
+main>nav {
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+main>nav>a {flex-grow: 1; flex-shrink: 1;}
+main>nav>a:hover {
+  transform: rotate(5deg);
+}
