@@ -1,19 +1,21 @@
 body {
-  width: 75%; margin: auto;
+  width: 50%; margin: auto;
   border: 1px solid black;
 }
 
 /* header */
-header {border: 1px solid black;}
-header>aside {max-width: 100%; display: inline-block;}
-
+header {margin-bottom: .5rem; display: flex; gap: .5rem;}
+header>aside {display: inline-block;}
+h1 {width: 100%; margin: 0; font-size: 1.5rem;}
+/* side header */
+#sidehead {width: 25%; flex-shrink: 0;}
+#sidehead>img, #sidehead>p {width: 100%; margin: 0;}
+#sidehead>nav {display: block;}
+/* fishtank */
+#fishtank {flex-grow: 1; background-color: gray; flex-grow: 1;}
+#fishtank img {width: 20%;}
 /* main */
-main>nav {
-  display: flex; flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
-}
-main>nav>a {flex-grow: 1; flex-shrink: 1;}
-main>nav>a:hover {
-  transform: rotate(5deg);
-}
+main>nav {gap: 1rem; columns: 4;}
+main>nav>a>img {width: 100%;}
+main>nav>a:hover {display: inline-block;transform: rotate(5deg);}
+main>nav>a>span {display: inline-block; width: 100%; text-align: center; text-decoration: underline;}
