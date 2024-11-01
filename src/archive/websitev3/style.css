@@ -1,0 +1,114 @@
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+p, h1, h2, h3, h4, h5, h6 {margin-top: 0;}
+a:hover { font-style: italic;}
+a {color: #1a5fb4;}
+a:visited {color:#813d9c;}
+a:active {color:#f66151}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+body {
+  background-color: #8C7F8D;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #393646;
+}
+
+  .bodycontainer {
+    height: auto; max-width: 800px;
+    margin: 10px auto 0;
+    display: flex; gap: 10px;
+  }
+
+    main { width: auto; }
+      main > section { 
+        padding: 10px; margin-bottom: 10px;
+        background-image: url("./bg.png");
+      }
+    
+    .sidebox { width: 40%; flex-shrink:0;}
+
+      /* Navigation sidebox*/
+      .sidemain {
+        width: auto; padding: 10px;
+        background-image: url("./bg.png");
+        position: -webkit-sticky; position: sticky;
+        top: 10px; z-index:1;
+      }
+        /* Navigation buttons */
+        .sidemain > nav {
+          display: flex; flex-wrap: wrap;
+          gap: 10px;
+        }
+        .sidemain > nav > a {
+          padding: 10px 20px;
+          border-radius: 20px;
+        }
+          /* And lots and colors */
+          .sidemain > nav > a:nth-child(1) { background-color: #f3baaf; }
+          .sidemain > nav > a:nth-child(2) { background-color: #f3d1a5; }
+          .sidemain > nav > a:nth-child(3) { background-color: #f7e797; }
+          .sidemain > nav > a:nth-child(4) { background-color: #d0e5a4; }
+          .sidemain > nav > a:nth-child(5) { background-color: #bee2ef; }
+          .sidemain > nav > a:nth-child(6) { background-color: #eec9ec; }
+
+        /* Other elements on the side that are not the nav menu */
+        .sidetrinkets > * {
+          position: absolute;
+          padding: 10px;
+          width: auto;
+        }
+
+          /* Updates box */
+          .sideupdates {
+            background-image: url("./bg.png");
+            top: 500px;
+            height: 150px;
+          }
+            .sideupdates > ul {
+              list-style-type: none;
+              margin: 0; padding-left: 0;
+            }
+
+          /* Chat box */
+          .cbox { 
+            padding: 0; 
+            top: 250px;
+            border: none;
+          }
+
+          /* Sticky note template */
+          .stickynotes { top: 750px; }
+          .stickynotes > * {
+              position: absolute;
+              padding: 20px 10px 10px;
+              width: 140px; height: 140px;
+            }
+          .fa-thumbtack {
+              color: #584E5F;
+              position: absolute;
+              margin: 0;
+              padding: 0;
+            }
+
+            /* Sticky Notes */
+            .stickynote1 {
+              top: 0;
+              rotate: -10deg;
+              background-color: #f6e8c5;
+            }
+              .stickynote1 > .fa-thumbtack {
+                  rotate: 30deg;
+                  left: 70px; bottom: 150px;
+              }
+
+            .stickynote2 {
+              top: 140px; left: 140px;
+              rotate: 10deg;
+              background-color: #f6d7d7;
+            }
+              .stickynote2 > .fa-thumbtack {
+                  rotate: -20deg;
+                  left: 55px; bottom: 155px;
+                }

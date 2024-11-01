@@ -1,0 +1,96 @@
+/* edit on 11/24/23: Added Nerd Fonts Icons */
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+
+/* Link styling */
+a:hover { text-decoration: underline;}
+a {text-decoration: none; color: #3363A1;}
+
+h1,h2,h3,h4,h5,h6,p {margin-top: 0; margin-bottom: 10px;}
+
+
+body {
+  background-image: url("./grid.png");
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1C232A;
+}
+.page {
+  max-width: 600px; margin: auto;
+}
+
+    /* Header */
+    header { margin-bottom: 10px; }
+      h1 {margin-bottom: 0;}
+      /* Navigation bar */
+      .headernav > ul { 
+        background-color: #9AC8F3;
+        list-style: none; padding: 0; margin: 0;
+        display: flex;
+        border: 2px dotted #759bcc;
+      }
+        .headernav > ul > li {
+          border-right: 2px solid #FAF9F8;
+        }
+          .headernav > ul > li > a:hover {
+            background-color: #86B7E5;
+            border-right: 2px dotted #759bcc;
+            border-left: 2px dotted #759bcc;
+          }
+          .headernav > ul > li:nth-child(1) > a:hover {
+            border-left: 2px solid transparent;
+          }
+          .headernav > ul > li > a {
+            padding: 8px 16px;
+            border: 2px solid transparent;
+            display: inline-block;
+          }
+
+    /* Body */
+    .body {
+      display: flex; gap: 10px; width: 100%;
+    }
+      /* Side content */
+      .sidebox {
+        width: 25%; flex-shrink: 0; order: 1; 
+        background-color: #FAF9F8; 
+        padding: 10px; margin-bottom: 10px;
+        border: 2px dotted #d5dae1;
+      }
+        /* Navigation bar */
+        .sidebox  > nav > ul {
+          list-style: none;
+          padding: 5px; margin: 0 0 0 15px;
+        }
+      /* Main content */
+      main {
+        width: auto; order: 0; flex-grow: 1;
+      } 
+        /* Sections */
+        main > * { 
+          background-color: #FAF9F8;
+          margin-bottom: 10px;
+          padding: 10px 10px 0;
+          border: 2px dotted #d5dae1;
+          }
+        /* Media items */
+        .projectitem { 
+          display: flex;
+          flex-direction: row;
+          padding: 10px;
+        }
+        .projectitem > div {
+          width: 100%;
+        }
+        .projectitem > img {
+          flex-grow: 0;
+          width: auto; height: 100px;
+        }
+
+    /* Footer */
+    footer {
+      background-color: #9AC8F3; 
+      padding: 10px;
+      border: 2px dotted #759bcc;
+    }
+      footer > i {color: #3363A1;}
+      footer > p {float: right;}
+

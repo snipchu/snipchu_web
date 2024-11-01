@@ -1,0 +1,73 @@
+h1,h2,h3,h4,h5,h6 {margin: 0 0 10px;}
+p {margin: 0 0 10px;}
+a {color: #7796A1;}
+
+.nobullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS- hierarchical order */
+
+body {
+  background-image: url("./grid.png");
+  color: #181615;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#page-container {
+  margin: auto;
+  max-width: 600px;
+}
+
+  header { margin-bottom: 20px; }
+    h1 { text-align: center; margin: 0 0 5px; }
+    header > nav > ul {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+      header > nav > ul > li {
+        font-size: 20px;
+      }
+
+  #body-container {
+    display: flex;
+    gap: 10px;
+  }
+    main {
+      width: 70%;
+      background-color: #5E5855;
+      padding: 10px 10px 0 10px;
+    }
+
+    #body-sidebar {
+      flex-grow: 1;
+      width: auto;
+    }
+      #body-sidebar > * {margin-bottom: 10px;}
+        #buttongroup {
+          display: flex;
+          flex-wrap: nowrap; gap: 5px;
+        }
+          #buttongroup > textarea {
+            resize: none;
+            width: 50px;
+            flex-grow: 1;
+          }
+
+      #pagenav > nav > ul { padding-left: 20px; }
+
+      #taglist > ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+        #taglist > ul > li {
+          padding: 5px 10px;
+          background-color: #7796A1;
+          border-radius: 5px;
+        }
+          #taglist > ul > li > a {
+            color: #FAF7F5;
+          }
