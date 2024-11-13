@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "snipchu_web",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.8"
-  }
+    "astro": "^4.16.11"
+  },
+  "description": "my personal website that i like experiment with",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

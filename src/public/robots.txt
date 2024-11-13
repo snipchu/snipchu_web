@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+Allow: /pages/
+Allow: /styles/
+
+User-agent: AdsBot-Google
+Disallow: /
+Allow: /styles/
