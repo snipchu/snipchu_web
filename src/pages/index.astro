@@ -1,5 +1,6 @@
 ---
 import Header from '../components/header.astro'
+import Threeblocksnav from '../components/threeblocksnav.astro'
 ---
 <html lang="en">
   <head>
@@ -10,9 +11,30 @@ import Header from '../components/header.astro'
     <title>bunnyguy island v8</title>
   </head>
   <body>
-    <Header />
-    <h1>bunnyguy island - astro port</h1>
-    <p>thank you for visiting bunnyguy island Ported to astro.</p>
-    <a href="../archive.zip">Download an archive of previous version here</a>
+    <Header/>
+    <main>
+      <h1>my header goes here</h1>
+      <section>
+        <Threeblocksnav
+          img1="/src/assets/img1.jpg"
+          img2="/src/assets/img2.jpg"
+          img3="/src/assets/img3.jpg"
+          img1alt="yippee"
+          img2alt="yippee"
+          img3alt="yippee"
+        />
+        <Threeblocksnav
+          img1="/src/assets/img1.jpg"
+          img2="/src/assets/img2.jpg"
+          img3="/src/assets/img3.jpg"
+          img1alt="yippee"
+          img2alt="yippee"
+          img3alt="yippee"
+        />
+      </section>
+      <footer>
+        <p>my footer section goes here</p>
+      </footer>
+    </main>
   </body>
 </html>
