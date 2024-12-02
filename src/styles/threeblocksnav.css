@@ -1,7 +1,0 @@
-.threeblocksnav {
-  width: 100%;
-}
-.threeblocksnav img {border-radius: .5rem; object-fit: cover; display: block;}
-.threeblocksnav>img:first-child { width: 100%; margin-bottom: .5rem;}
-.threeblocksnav>div { display: flex; gap: .5rem;}
-.threeblocksnav>div>img {flex-grow: 1;}

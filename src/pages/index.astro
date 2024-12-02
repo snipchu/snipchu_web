@@ -1,6 +1,11 @@
 ---
 import Header from '../components/header.astro'
-import Threeblocksnav from '../components/threeblocksnav.astro'
+import { Image } from 'astro:assets';
+import img1 from '../assets/img1.jpg';
+import img2 from '../assets/img2.jpg';
+import img3 from '../assets/img3.jpg';
+import '../styles/flexbox.css';
+//import '../styles/index.css';
 ---
 <html lang="en">
   <head>
@@ -15,22 +20,12 @@ import Threeblocksnav from '../components/threeblocksnav.astro'
     <main>
       <h1>my header goes here</h1>
       <section>
-        <Threeblocksnav
-          img1="/src/assets/img1.jpg"
-          img2="/src/assets/img2.jpg"
-          img3="/src/assets/img3.jpg"
-          img1alt="yippee"
-          img2alt="yippee"
-          img3alt="yippee"
-        />
-        <Threeblocksnav
-          img1="/src/assets/img1.jpg"
-          img2="/src/assets/img2.jpg"
-          img3="/src/assets/img3.jpg"
-          img1alt="yippee"
-          img2alt="yippee"
-          img3alt="yippee"
-        />
+        <article class="threeblocks">
+          <Image src={img1} alt="img1"/>
+          <div class="split2">
+            <Image src={img2} alt="img2"/>
+            <Image src={img3} alt="img3"/>
+          </div>
       </section>
       <footer>
         <p>my footer section goes here</p>
