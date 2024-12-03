@@ -1,0 +1,17 @@
+:root {
+  --white: #FAECE3;
+  --tan: #DBB9A2;
+  --brown: #6A4328;
+  --black: #191715;
+  --red: #E92011;
+  --yellow: #FFBB00;
+  --green: #76BA00;
+  --blue: #225ED6;
+  --purple: #860AAC;
+  --blue-link: #023CCF;
+  --purple-link: #660099;
+}
+* {font-family: 'Roboto';}
+h1 {margin: 1rem 0;}
+h2,h3,h4,h5,h6,p,li {margin: 0.5rem 0;}
+img { border-radius: 0.5rem;}

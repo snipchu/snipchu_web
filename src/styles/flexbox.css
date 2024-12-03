@@ -1,0 +1,10 @@
+.flexbox { display: flex; gap: .5rem; }
+
+/* 3 blocks */
+.threeblocks {
+  width: 100%;
+  display: flex; gap: .5rem;
+  flex-direction: column;
+}
+.threeblocks img {object-fit: cover; flex-grow: 1;}
+.threeblocks > img {width: 100%;}
