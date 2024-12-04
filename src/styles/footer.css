@@ -1,0 +1,11 @@
+footer {
+  display: flex; gap: .5rem;
+  justify-content: space-between;
+  margin: 1rem 0; border: 3px solid transparent;
+  border-image: url("../assets/border.png");
+}
+footer * {margin: 0; padding: 0;}
+footer>nav>ul {
+  display: flex; gap: .5rem;
+}
+footer>nav>ul>li {list-style-type: none;}

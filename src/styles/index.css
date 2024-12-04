@@ -1,4 +1,12 @@
 body {
+  background-color: var(--black);
+  color: var(--white); margin: 0;
+}
+main {
   width: 90%; margin: auto;
-  border: 1px solid black;
+}
+header {width: 100%;}
+header>img {
+  width: 100%; height: auto;
+  border-radius: 0;
 }

@@ -6,5 +6,8 @@
   display: flex; gap: .5rem;
   flex-direction: column;
 }
-.threeblocks img {object-fit: cover; flex-grow: 1;}
-.threeblocks > img {width: 100%;}
+.threeblocks>.flexbox {max-height: 8rem;}
+.threeblocks>.flexbox>a>img {height: 100%; width: 100%;}
+.threeblocks>a>h2 {margin: 0;}
+.threeblocks a {flex-grow: 1;}
+.threeblocks img {width: 100%; display: block;}

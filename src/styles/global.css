@@ -14,4 +14,6 @@
 * {font-family: 'Roboto';}
 h1 {margin: 1rem 0;}
 h2,h3,h4,h5,h6,p,li {margin: 0.5rem 0;}
-img { border-radius: 0.5rem;}
+img { border-radius: 0.5rem; object-fit: cover; display: block;}
+a { color: var(--blue-link); }
+a:hover, a:visited: a:active { color: var(--purple-link); }
