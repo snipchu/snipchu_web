@@ -1,13 +1,14 @@
-.flexbox { display: flex; gap: .5rem; }
-
 /* 3 blocks */
 .threeblocks {
-  width: 100%;
-  display: flex; gap: .5rem;
-  flex-direction: column;
+  display: flex; gap: .5rem; width: 100%; height: 20rem;
+  flex-direction: column; margin: 0;
 }
-.threeblocks>.flexbox {max-height: 8rem;}
-.threeblocks>.flexbox>a>img {height: 100%; width: 100%;}
-.threeblocks>a>h2 {margin: 0;}
-.threeblocks a {flex-grow: 1;}
-.threeblocks img {width: 100%; display: block;}
+.threeblocks > a {min-height: 0; flex-grow: 1;}
+.threeblocks h2 {margin: 0;}
+.threeblocks>.flexbox {height: 30%;}
+.flexbox { display: flex; gap: .5rem; }
+.flexbox>* {flex-grow: 1;}
+
+@media screen and (min-width: 40rem) {
+  .threeblocks {height: 100%;}
+}

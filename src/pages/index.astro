@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
 import '../styles/flexbox.css';
 import '../styles/global.css';
 import '../styles/index.css';
@@ -9,26 +10,31 @@ import '@fontsource/roboto';
 import img1 from '../assets/img1.jpg';
 import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
-import header from '../assets/header.png';
+import stamp from '../assets/stamp.png';
+import hr from '../assets/hr.png';
 import border from '../assets/border.png';
+import buttonimg from '../assets/88x31_temp.png';
 ---
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>bunnyguy island v8</title>
-  </head>
+  <Head/>
   <body>
     <header>
-      <Image src={header} alt="the header image"/>
+      <Image src={stamp} alt="yay"/>
     </header>
     <main>
-      <p>Chào mừng thế giỡi</p>
-      <section class="flexbox">
+      <section id="linkbox" class="flexbox">
+        <aside id="stamplist" class="flexbox">
+          <h2>stamps</h2>
+          <nav><ul>
+            <li><a href=""><Image src={buttonimg} alt="about me"/></a></li>
+            <li><a href=""><Image src={buttonimg} alt="art"/></a></li>
+            <li><a href=""><Image src={buttonimg} alt="tech"/></a></li>
+            <li><a href=""><Image src={buttonimg} alt="blog"/></a></li>
+            <li><a href=""><Image src={buttonimg} alt="site info"/></a></li>
+          </ul></nav>
+        </aside>
         <article class="threeblocks">
-          <a href=""><h2>projects</h2></a>
+          <h2><a href="">projects</a></h2>
           <a href=""><Image src={img1} alt="img1"/></a>
           <div class="flexbox">
             <a href=""><Image src={img2} alt="img2"/></a>
@@ -36,14 +42,15 @@ import border from '../assets/border.png';
           </div>
         </article>
         <article class="threeblocks">
-          <a href=""><h2>projects</h2></a>
-          <a href=""><Image src={img1} alt="img1"/></a>
+          <h2><a href="">portfolio</a></h2>
           <div class="flexbox">
             <a href=""><Image src={img2} alt="img2"/></a>
             <a href=""><Image src={img3} alt="img3"/></a>
           </div>
+          <a href=""><Image src={img1} alt="img1"/></a>
         </article>
       </section>
+      <hr>
       <Footer/>
     </main>
   </body>
