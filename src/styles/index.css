@@ -2,24 +2,43 @@ body {
   background-color: var(--white);
   color: var(--black); margin: 0;
 }
-header {padding: 1rem 0; background-color: var(--yellow);}
+header {
+  padding: 1rem 0; height: 8rem;
+  background-color: var(--yellow);
+}
 header>img {width: auto; margin: auto;}
-main { width: 80%; margin: 1rem auto; }
+main { width: 70%; margin: 1rem auto; }
+
+h1, #description {text-align: center;}
+#infobox {flex-wrap: wrap; width: 100%;}
+#infobox>aside {
+  flex-grow: 1; width: 100%;
+  background-color: var(--red);
+  padding: .5rem;
+}
+
+#infobox>aside:nth-child(2) {background-color: var(--yellow);}
+#infobox>aside:nth-child(3) {background-color: var(--green);}
+#infobox>aside:nth-child(4) {background-color: var(--blue);}
+
 #linkbox {flex-direction: column; width: 100%;}
+#linkbox>aside>h2 {margin-top: 0;}
 #linkbox a:hover {transform: rotate(.02rad);}
-#stamplist nav {flex-grow: 1;}
-#stamplist h2 {margin: 0; flex-grow: 0;}
-#stamplist, #stamplist ul {
+
+#stamplist {
   margin: 0; padding: 0;
   display: flex; gap: .5rem;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-#stamplist ul {flex-direction: row;}
-#stamplist li {margin: 0; list-style-type: none;}
-#stamplist li:last-child {margin-left: auto;}
+#stamplist li {
+  margin: auto;
+  list-style-type: none;
+}
 
 @media screen and (min-width: 40rem) {
-  #stamplist li:last-child {margin-top: auto;}
-  #stamplist ul {flex-direction: column; height: 100%;}
+  #stamplist { flex-direction: column; }
+
   #linkbox {flex-direction: row; height: 20rem;}
+  #infobox>aside {width: 45%;}
 }

@@ -10,6 +10,7 @@ import '@fontsource/roboto';
 import img1 from '../assets/img1.jpg';
 import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
+import qbg from '../assets/qbg.jpg';
 import stamp from '../assets/stamp.png';
 import hr from '../assets/hr.png';
 import border from '../assets/border.png';
@@ -22,15 +23,41 @@ import buttonimg from '../assets/88x31_temp.png';
       <Image src={stamp} alt="yay"/>
     </header>
     <main>
+      <h1>title</h1>
+      <section id="description">
+        <p>text describing me</p>
+        <p>some more text</p>
+        <aside id="infobox" class="flexbox">
+          <aside>
+            <h2>title</h2>
+            <p>blahblahblah</p>
+          </aside>
+          <aside>
+            <h2>title</h2>
+            <p>blahblahblah</p>
+          </aside>
+          <aside>
+            <h2>title</h2>
+            <p>blahblahblah</p>
+          </aside>
+          <aside>
+            <h2>title</h2>
+            <p>blahblahblah</p>
+          </aside>
+        </aside>
+        </article>
+      </section>
+      <hr>
       <section id="linkbox" class="flexbox">
-        <aside id="stamplist" class="flexbox">
+        <aside>
           <h2>stamps</h2>
-          <nav><ul>
-            <li><a href=""><Image src={buttonimg} alt="about me"/></a></li>
-            <li><a href=""><Image src={buttonimg} alt="art"/></a></li>
-            <li><a href=""><Image src={buttonimg} alt="tech"/></a></li>
-            <li><a href=""><Image src={buttonimg} alt="blog"/></a></li>
-            <li><a href=""><Image src={buttonimg} alt="site info"/></a></li>
+          <nav><ul id="stamplist">
+            <li><a href="https://github.com/snipchu"><Image src={buttonimg} alt=""/></a></li>
+            <li><a href=""><Image src={buttonimg} alt=""/></a></li>
+            <li><a href=""><Image src={buttonimg} alt=""/></a></li>
+            <li><a href=""><Image src={buttonimg} alt=""/></a></li>
+            <li><a href=""><Image src={buttonimg} alt=""/></a></li>
+            <li><a href=""><Image src={buttonimg} alt=""/></a></li>
           </ul></nav>
         </aside>
         <article class="threeblocks">
@@ -47,7 +74,7 @@ import buttonimg from '../assets/88x31_temp.png';
             <a href=""><Image src={img2} alt="img2"/></a>
             <a href=""><Image src={img3} alt="img3"/></a>
           </div>
-          <a href=""><Image src={img1} alt="img1"/></a>
+          <a href=""><Image src={qbg} alt="img1"/></a>
         </article>
       </section>
       <hr>

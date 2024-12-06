@@ -10,5 +10,6 @@
 .flexbox>* {flex-grow: 1;}
 
 @media screen and (min-width: 40rem) {
+  .threeblocks > a {min-height: 0; flex-grow: 1;}
   .threeblocks {height: 100%;}
 }

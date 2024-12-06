@@ -1,11 +1,13 @@
-footer {
+footer, footer>nav>ul {
   display: flex; gap: .5rem;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 footer * {margin: 0 !important; padding: 0 !important;}
-footer>nav>ul {
-  display: flex; gap: .5rem;
-}
 footer>nav>ul>li {list-style-type: none;}
-footer>nav>ul>li:not(:first-child):before {content: ' // ';}
+
+@media screen and (min-width: 40rem) {
+  footer, footer>nav>ul {flex-direction: row;}
+  footer>nav>ul>li:not(:first-child):before {content: ' // ';}
+}
