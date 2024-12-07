@@ -3,23 +3,14 @@ body {
   color: var(--black); margin: 0;
 }
 header {
-  padding: 1rem 0; height: 8rem;
+  padding: 1rem 0;
   background-color: var(--yellow);
 }
-header>img {width: auto; margin: auto;}
+header img {width: auto; margin: auto;}
+header img:hover {transform: rotate(.2rad);}
+
 main { width: 70%; margin: 1rem auto; }
-
-h1, #description {text-align: center;}
-#infobox {flex-wrap: wrap; width: 100%;}
-#infobox>aside {
-  flex-grow: 1; width: 100%;
-  background-color: var(--red);
-  padding: .5rem;
-}
-
-#infobox>aside:nth-child(2) {background-color: var(--yellow);}
-#infobox>aside:nth-child(3) {background-color: var(--green);}
-#infobox>aside:nth-child(4) {background-color: var(--blue);}
+h1 {text-align: center;}
 
 #linkbox {flex-direction: column; width: 100%;}
 #linkbox>aside>h2 {margin-top: 0;}
@@ -27,14 +18,16 @@ h1, #description {text-align: center;}
 
 #stamplist {
   margin: 0; padding: 0;
-  display: flex; gap: .5rem;
-  flex-wrap: wrap;
+  display: flex; gap: .5rem; min-width: 88px;
+  flex-wrap: wrap; flex-grow: 1;
   justify-content: space-between;
 }
 #stamplist li {
   margin: auto;
   list-style-type: none;
 }
+#stamplist img {border: 1px solid var(--black);}
+#stamplist img:hover {border: 1px solid var(--blue);}
 
 @media screen and (min-width: 40rem) {
   #stamplist { flex-direction: column; }

@@ -3,7 +3,7 @@
   --tan: #DBB9A2;
   --brown: #6A4328;
   --black: #191715;
-  --red: #E92011;
+  --red: #FF2313;
   --yellow: #FFBB00;
   --green: #76BA00;
   --blue: #225ED6;
@@ -14,7 +14,11 @@
 * {font-family: 'Roboto';}
 h1 {margin: 1rem 0;}
 h2,h3,h4,h5,h6,p,li {margin: 0.5rem 0;}
-img {display: block; object-fit: cover; width: 100%; height: 100%;}
+img {
+  display: block; object-fit: cover;
+  width: 100%; height: 100%;
+  image-rendering: pixelated;
+}
 hr {
   display: block;
   border: 0; margin: 1rem 0;

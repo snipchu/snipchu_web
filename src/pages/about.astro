@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+import '../styles/flexbox.css';
+import '../styles/global.css';
+import '../styles/about.css';
+import '@fontsource/roboto';
+
+import stamp from '../assets/stamp.png';
+import hr from '../assets/hr.png';
+import border from '../assets/border.png';
+---
+<html lang="en">
+  <Head/>
+  <body>
+    <header><a href="/">
+      <Image src={stamp} alt="yay"/>
+    </a></header>
+    <main>
+      <p>lorem ipsum</p>
+      <aside id="infobox" class="flexbox">
+        <aside>
+          <h2>skills</h2>
+          <ul>
+            <li>Experience in Python, Java, C, HTML/CSS/JS, and GDscript</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </aside>
+        <aside>
+          <h2>title</h2>
+          <p>blahblahblah</p>
+        </aside>
+        <aside>
+          <h2>title</h2>
+          <p>blahblahblah</p>
+        </aside>
+        <aside>
+          <h2>title</h2>
+          <p>blahblahblah</p>
+        </aside>
+      </aside>
+      <Footer/>
+    </main>
+  </body>
+</html>

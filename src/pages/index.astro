@@ -15,45 +15,23 @@ import stamp from '../assets/stamp.png';
 import hr from '../assets/hr.png';
 import border from '../assets/border.png';
 import buttonimg from '../assets/88x31_temp.png';
+import whoami from '../assets/whoami.png';
 ---
 <html lang="en">
   <Head/>
   <body>
-    <header>
+    <header><a href="/">
       <Image src={stamp} alt="yay"/>
-    </header>
+    </a></header>
     <main>
-      <h1>title</h1>
-      <section id="description">
-        <p>text describing me</p>
-        <p>some more text</p>
-        <aside id="infobox" class="flexbox">
-          <aside>
-            <h2>title</h2>
-            <p>blahblahblah</p>
-          </aside>
-          <aside>
-            <h2>title</h2>
-            <p>blahblahblah</p>
-          </aside>
-          <aside>
-            <h2>title</h2>
-            <p>blahblahblah</p>
-          </aside>
-          <aside>
-            <h2>title</h2>
-            <p>blahblahblah</p>
-          </aside>
-        </aside>
-        </article>
-      </section>
+      <p>programmer, artist, and to-be computer engineer</p>
       <hr>
       <section id="linkbox" class="flexbox">
         <aside>
           <h2>stamps</h2>
           <nav><ul id="stamplist">
-            <li><a href="https://github.com/snipchu"><Image src={buttonimg} alt=""/></a></li>
-            <li><a href=""><Image src={buttonimg} alt=""/></a></li>
+            <li><a href="./about"><Image src={whoami} alt="whoami"/></a></li>
+            <li><a href=""><Image src={buttonimg} alt="achievements"/></a></li>
             <li><a href=""><Image src={buttonimg} alt=""/></a></li>
             <li><a href=""><Image src={buttonimg} alt=""/></a></li>
             <li><a href=""><Image src={buttonimg} alt=""/></a></li>
@@ -77,7 +55,6 @@ import buttonimg from '../assets/88x31_temp.png';
           <a href=""><Image src={qbg} alt="img1"/></a>
         </article>
       </section>
-      <hr>
       <Footer/>
     </main>
   </body>
