@@ -1,0 +1,13 @@
+body {
+  background-color: var(--white);
+  color: var(--black); margin: 0;
+}
+header {
+  padding: 1rem 0;
+  background-color: var(--yellow);
+}
+header img {width: auto; margin: auto;}
+header img:hover {transform: rotate(.2rad);}
+main { width: 70%; margin: 1rem auto; }
+@media screen and (min-width: 40rem) {
+}

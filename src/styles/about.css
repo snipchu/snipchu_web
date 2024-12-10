@@ -9,17 +9,31 @@ header {
 header img {width: auto; margin: auto;}
 header img:hover {transform: rotate(.2rad);}
 main { width: 70%; margin: 1rem auto; }
-h1, #infobox h2 {text-align: center;}
+h1, h3 {text-align: center;}
+h3 {font-size: 1.25rem;}
 #infobox {flex-wrap: wrap; width: 100%;}
 #infobox>aside {
   flex-grow: 1; width: 100%;
   background-color: var(--red);
   padding: .5rem;
 }
+#linkbox { 
+  margin: 0.5rem 0; padding: 0;
+  list-style-type: none; flex-wrap: wrap;
+  justify-content: space-between;
+}
+#linkbox>li {
+  padding: .5rem 1rem; margin: 0;
+  background-color: var(--tan);
+  text-align: center;
+  border-radius: 2rem;
+}
+
 #infobox>aside:nth-child(2) {background-color: var(--yellow);}
 #infobox>aside:nth-child(3) {background-color: var(--green);}
 #infobox>aside:nth-child(4) {background-color: var(--blue); color: var(--white);}
-
+#infobox>aside:nth-child(4) a {color: var(--yellow);}
+#infobox>aside:nth-child(4) a:hover {color: var(--tan);}
 @media screen and (min-width: 40rem) {
   #infobox>aside {width: 45%;}
 }

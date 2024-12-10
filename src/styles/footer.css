@@ -2,8 +2,8 @@ footer, footer>nav>ul {
   display: flex; gap: .5rem;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 1rem;
 }
+footer, #footerbreak { width: 70%; margin: 1rem auto; }
 footer * {margin: 0 !important; padding: 0 !important;}
 footer>nav>ul>li {list-style-type: none;}
 

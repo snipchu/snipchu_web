@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+import '../styles/flexbox.css';
+import '../styles/global.css';
+import '../styles/projects.css';
+import '@fontsource/roboto';
+
+import stamp from '../assets/stamp.png';
+import hr from '../assets/hr.png';
+import border from '../assets/border.png';
+---
+<html lang="en">
+  <Head/>
+  <body>
+    <header><a href="/">
+      <Image src={stamp} alt="yay"/>
+    </a></header>
+    <main>
+      <p>lorem ipsum</p>
+      <section id="projectbox">
+        <article><figure>
+          <figcaption>Foo</figcaption>
+          <Image src={stamp} alt="foo">
+        </figure></article>
+      </section>
+    </main>
+    <Footer/>
+  </body>
+</html>
