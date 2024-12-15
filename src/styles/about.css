@@ -11,10 +11,9 @@ header img:hover {transform: rotate(.2rad);}
 main { width: 70%; margin: 1rem auto; }
 h1, h3 {text-align: center;}
 h3 {font-size: 1.25rem;}
-#infobox {flex-wrap: wrap; width: 100%;}
-#infobox>aside {
+.grid4 {flex-wrap: wrap; width: 100%;}
+.grid4>aside {
   flex-grow: 1; width: 100%;
-  background-color: var(--red);
   padding: .5rem;
 }
 #linkbox { 
@@ -28,12 +27,16 @@ h3 {font-size: 1.25rem;}
   text-align: center;
   border-radius: 2rem;
 }
-
+#infobox>aside:nth-child(1) {background-color: var(--red);}
 #infobox>aside:nth-child(2) {background-color: var(--yellow);}
 #infobox>aside:nth-child(3) {background-color: var(--green);}
 #infobox>aside:nth-child(4) {background-color: var(--blue); color: var(--white);}
 #infobox>aside:nth-child(4) a {color: var(--yellow);}
 #infobox>aside:nth-child(4) a:hover {color: var(--tan);}
+
+#favorites>aside>div {width: 75%; flex-shrink: 0;}
+#favorites>aside {background-color: var(--tan);}
 @media screen and (min-width: 40rem) {
-  #infobox>aside {width: 45%;}
+  .grid4>aside {width: 45%;}
+  .grid4 {flex-wrap: wrap;}
 }

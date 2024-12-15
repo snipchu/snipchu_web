@@ -20,14 +20,15 @@ import border from '../assets/border.png';
     <main>
       <h1>whoami</h1>
       <p>foo..........</p>
-      <h2>contact me at:</h2>
+      <h2>find me at:</h2>
       <nav><ul id="linkbox" class="flexbox">
         <li><a href="https://github.com/snipchu">github</a></li>
         <li><a href="https://snipchu.itch.io">itch.io</a></li>
+        <li><a href="https://snipchu.bsky.social">bluesky</a></li>
         <li><a href="mailto:mr.bunny262@slmails.com">e-mail</a></li>
       </ul></nav>
       <h2>qualifications</h2>
-      <article id="infobox" class="flexbox">
+      <article id="infobox" class="grid4 flexbox">
         <aside>
           <h3>skills</h3>
           <ul>
@@ -56,16 +57,35 @@ import border from '../assets/border.png';
       </article>
 
       <h2>favorites list</h2>
-      <article id="favorites">
-        <aside>
+      <article id="favorites" class="grid4 flexbox">
+        <aside class="flexbox">
           <Image src={stamp} alt=""/>
-          <h3>title</h3>
-          <p>blah blah blah filler text here</p>
+          <div>
+            <h3>Portal 2</h3>
+            <p>AKA the video game that completely changed my brain chemistry</p>
+            <p>blah blah blah filler text here</p>
+          </div>
         </aside>
-        <aside>
+        <aside class="flexbox">
           <Image src={stamp} alt=""/>
-          <h3>title</h3>
-          <p>blah blah blah filler text here</p>
+          <div>
+            <h3>Tamagotchi</h3>
+            <p>the GOAT of all virtual pet games</p>
+          </div>
+        </aside>
+        <aside class="flexbox">
+          <Image src={stamp} alt=""/>
+          <div>
+            <h3>title</h3>
+            <p>blah blah blah filler text here</p>
+          </div>
+        </aside>
+        <aside class="flexbox">
+          <Image src={stamp} alt=""/>
+          <div>
+            <h3>title</h3>
+            <p>blah blah blah filler text here</p>
+          </div>
         </aside>
       </article>
     </main>

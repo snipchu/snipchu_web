@@ -8,6 +8,7 @@
 .threeblocks>.flexbox {height: 30%;}
 .flexbox { display: flex; gap: .5rem; }
 .flexbox>* {flex-grow: 1;}
+.twoblocks>* {flex-basis: 50%;}
 
 @media screen and (min-width: 40rem) {
   .threeblocks > a {min-height: 0; flex-grow: 1;}

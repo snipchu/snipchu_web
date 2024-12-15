@@ -16,6 +16,8 @@ import hr from '../assets/hr.png';
 import border from '../assets/border.png';
 import buttonimg from '../assets/88x31_temp.png';
 import whoami from '../assets/whoami.png';
+import bunnyboard from '../assets/bunnyboard.jpg';
+import shotdown from '../assets/shotgun_showdown.png';
 ---
 <html lang="en">
   <Head/>
@@ -24,7 +26,7 @@ import whoami from '../assets/whoami.png';
       <Image src={stamp} alt="yay"/>
     </a></header>
     <main>
-      <p>programmer, artist, and to-be computer engineer</p>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
       <hr>
       <section id="linkbox" class="flexbox">
         <aside>
@@ -38,15 +40,15 @@ import whoami from '../assets/whoami.png';
         </aside>
         <article class="threeblocks">
           <h2><a href="">projects</a></h2>
-          <a href=""><Image src={img1} alt="img1"/></a>
-          <div class="flexbox">
-            <a href=""><Image src={img2} alt="img2"/></a>
+          <a href="https://github.com/snipchu/bunnyboard/"><Image src={bunnyboard} alt="A custom stenograph keyboard."/></a>
+          <div class="flexbox twoblocks">
+            <a href="https://github.com/snipchu/shotgun_showdown"><Image src={shotdown} alt="A video game with flapping birds and a crosshair."/></a>
             <a href=""><Image src={img3} alt="img3"/></a>
           </div>
         </article>
         <article class="threeblocks">
-          <h2><a href="">portfolio</a></h2>
-          <div class="flexbox">
+          <h2><a href="">projects</a></h2>
+          <div class="flexbox twoblocks" id="right3blocks">
             <a href=""><Image src={img2} alt="img2"/></a>
             <a href=""><Image src={img3} alt="img3"/></a>
           </div>

@@ -28,7 +28,6 @@ h1 {text-align: center;}
 }
 #stamplist img {border: 1px solid var(--black);}
 #stamplist img:hover {border: 1px solid var(--blue);}
-
 @media screen and (min-width: 40rem) {
   #stamplist { flex-direction: column; }
 
