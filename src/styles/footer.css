@@ -1,13 +1,13 @@
-footer, footer>nav>ul {
+footer>div, footer>div>nav>ul {
   display: flex; gap: .5rem;
   flex-direction: column;
   justify-content: space-between;
 }
-footer, #footerbreak { width: 70%; margin: 1rem auto; }
-footer * {margin: 0 !important; padding: 0 !important;}
-footer>nav>ul>li {list-style-type: none;}
+footer { background-color: var(--yellow); padding: .5rem 0;}
+footer>div {margin: auto; width: 70%;}
+footer>div * {margin: 0 !important; padding: 0 !important;}
+footer>div>nav>ul>li {list-style-type: none;}
 
 @media screen and (min-width: 40rem) {
-  footer, footer>nav>ul {flex-direction: row;}
-  footer>nav>ul>li:not(:first-child):before {content: ' // ';}
+  footer>div, footer>div>nav>ul {flex-direction: row;}
 }

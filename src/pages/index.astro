@@ -5,19 +5,20 @@ import Head from '../components/head.astro';
 import '../styles/flexbox.css';
 import '../styles/global.css';
 import '../styles/index.css';
-import '@fontsource/roboto';
+import '@fontsource/be-vietnam-pro';
 
-import img1 from '../assets/img1.jpg';
-import img2 from '../assets/img2.jpg';
-import img3 from '../assets/img3.jpg';
-import qbg from '../assets/qbg.jpg';
-import stamp from '../assets/stamp.png';
-import hr from '../assets/hr.png';
-import border from '../assets/border.png';
-import buttonimg from '../assets/88x31_temp.png';
-import whoami from '../assets/whoami.png';
-import bunnyboard from '../assets/bunnyboard.jpg';
-import shotdown from '../assets/shotgun_showdown.png';
+import img1 from '../assets/projects/img1.jpg';
+import img2 from '../assets/projects/img2.jpg';
+import img3 from '../assets/projects/img3.jpg';
+import qbg from '../assets/projects/qbg.jpg';
+import stamp from '../assets/site/stamp.png';
+import hr from '../assets/site/hr.png';
+import border from '../assets/site/border.png';
+import buttonimg from '../assets/stamps/88x31_temp.png';
+import whoami from '../assets/stamps/whoami.png';
+import bunnyboard from '../assets/projects/bunnyboard.jpg';
+import shotdown from '../assets/projects/shotgun_showdown.png';
+import nicksdayoff from '../assets/projects/nicksdayoff.png';
 ---
 <html lang="en">
   <Head/>
@@ -26,7 +27,8 @@ import shotdown from '../assets/shotgun_showdown.png';
       <Image src={stamp} alt="yay"/>
     </a></header>
     <main>
-      <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+      <h1>bunnyguy island</h1>
+      <p>artist, programmer, and designer</p>
       <hr>
       <section id="linkbox" class="flexbox">
         <aside>
@@ -42,13 +44,13 @@ import shotdown from '../assets/shotgun_showdown.png';
           <h2><a href="">projects</a></h2>
           <a href="https://github.com/snipchu/bunnyboard/"><Image src={bunnyboard} alt="A custom stenograph keyboard."/></a>
           <div class="flexbox twoblocks">
-            <a href="https://github.com/snipchu/shotgun_showdown"><Image src={shotdown} alt="A video game with flapping birds and a crosshair."/></a>
-            <a href=""><Image src={img3} alt="img3"/></a>
+            <a href="https://github.com/snipchu/nicks-day-off"><Image src={nicksdayoff} alt="A pixel art video game screenshot with bunnyguy running in a lighted house."/></a>
+            <a href="https://github.com/snipchu/shotgun_showdown"><Image src={shotdown} alt="A 3D pixel art video game screenshot containing with flapping birds and a crosshair."/></a>
           </div>
         </article>
         <article class="threeblocks">
           <h2><a href="">projects</a></h2>
-          <div class="flexbox twoblocks" id="right3blocks">
+          <div class="flexbox twoblocks">
             <a href=""><Image src={img2} alt="img2"/></a>
             <a href=""><Image src={img3} alt="img3"/></a>
           </div>

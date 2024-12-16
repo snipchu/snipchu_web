@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/be-vietnam": "^4.5.2",
+    "@fontsource/be-vietnam-pro": "^5.1.0",
+    "@fontsource/jersey-25-charted": "^5.1.0",
     "@fontsource/roboto": "^5.1.0",
     "astro": "^4.16.16"
   }

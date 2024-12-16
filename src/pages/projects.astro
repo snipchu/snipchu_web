@@ -5,11 +5,11 @@ import Head from '../components/head.astro';
 import '../styles/flexbox.css';
 import '../styles/global.css';
 import '../styles/projects.css';
-import '@fontsource/roboto';
+import '@fontsource/be-vietnam-pro';
 
-import stamp from '../assets/stamp.png';
-import hr from '../assets/hr.png';
-import border from '../assets/border.png';
+import stamp from '../assets/site/stamp.png';
+import hr from '../assets/site/hr.png';
+import border from '../assets/site/border.png';
 ---
 <html lang="en">
   <Head/>
@@ -18,8 +18,17 @@ import border from '../assets/border.png';
       <Image src={stamp} alt="yay"/>
     </a></header>
     <main>
+      <h1>~/projects</h1>
       <p>lorem ipsum</p>
       <section id="projectbox">
+        <article><figure>
+          <figcaption>Foo</figcaption>
+          <Image src={stamp} alt="foo">
+        </figure></article>
+        <article><figure>
+          <figcaption>Foo</figcaption>
+          <Image src={stamp} alt="foo">
+        </figure></article>
         <article><figure>
           <figcaption>Foo</figcaption>
           <Image src={stamp} alt="foo">
