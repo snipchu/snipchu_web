@@ -10,3 +10,19 @@ header img {max-width: 15rem; margin: auto;}
 header img:hover {transform: scale(102%);}
 main { width: 70%; margin: 1rem auto; }
 h1 {text-align: center;}
+
+#projectbox { flex-direction: column; }
+#projectbox>article {
+  background-color: var(--tan);
+  padding: .5rem; flex-direction: column;
+}
+#projectbox div { order: 1; }
+#projectbox img {height: 10rem;}
+#projectbox a:hover {transform: rotate(.02rad);}
+
+@media screen and (min-width: 40rem) {
+  #projectbox>article {flex-direction: row;}
+  #projectbox div { width: 60%; flex-shrink: 0; order: 0; }
+  #projectbox img {height: auto;}
+}
+

@@ -1,13 +1,13 @@
-footer>div, footer>div>nav>ul {
+footer>div * {margin: 0; padding: 0;}
+footer>div, footer ul {
   display: flex; gap: .5rem;
   flex-direction: column;
-  justify-content: space-between;
 }
 footer { background-color: var(--yellow); padding: .5rem 0;}
 footer>div {margin: auto; width: 70%;}
-footer>div * {margin: 0 !important; padding: 0 !important;}
-footer>div>nav>ul>li {list-style-type: none;}
-
+footer li {list-style-type: none;}
+footer svg {display: inline-block;}
 @media screen and (min-width: 40rem) {
-  footer>div, footer>div>nav>ul {flex-direction: row;}
+  footer nav {margin-left: auto;}
+  footer>div, footer ul {flex-direction: row;}
 }

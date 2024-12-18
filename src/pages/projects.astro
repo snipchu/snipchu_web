@@ -10,6 +10,9 @@ import '@fontsource/be-vietnam-pro';
 import stamp from '../assets/site/stamp.png';
 import hr from '../assets/site/hr.png';
 import border from '../assets/site/border.png';
+import bunnyboard from '../assets/projects/bunnyboard.jpg';
+import nicksdayoff from '../assets/projects/nicksdayoff.png';
+import shotdown from '../assets/projects/shotgun_showdown.png';
 ---
 <html lang="en">
   <Head/>
@@ -20,19 +23,34 @@ import border from '../assets/site/border.png';
     <main>
       <h1>~/projects</h1>
       <p>lorem ipsum</p>
-      <section id="projectbox">
-        <article><figure>
-          <figcaption>Foo</figcaption>
-          <Image src={stamp} alt="foo">
-        </figure></article>
-        <article><figure>
-          <figcaption>Foo</figcaption>
-          <Image src={stamp} alt="foo">
-        </figure></article>
-        <article><figure>
-          <figcaption>Foo</figcaption>
-          <Image src={stamp} alt="foo">
-        </figure></article>
+      <section id="projectbox" class="flexbox">
+        <article id="bunnyboard" class="flexbox">
+          <a href="https://github.com/snipchu/bunnyboard/"><Image src={bunnyboard} alt="A custom stenograph keyboard."/></a>
+          <div>
+            <h2>bunnyboard</h2>
+            <p>02 NOV 2024 -- 01 DEC 2024</p>
+            <p>"bunnyboard" is a PCB for a stenograph keyboard running QMK firmware.</p>
+            <p>It uses kailh choc v1 switches and is powered by a raspberry pi pico.</p>
+            <p>P.S. -- This PCB was made with <a href="https://hackclub.com/onboard">Hack Club's Onboard grant</a>!</p>
+          </div>
+        </article>
+        <article id="shotdown" class="flexbox">
+          <div>
+            <h2>shotgun showdown</h2>
+            <p>26 NOV 2024 -- 10 DEC 2024</p>
+            <p>An (unfinished) submission for the <a href="https://itch.io/jam/20-second-game-jam">annual 20 second game jam</a>. The game revolves around Bruce, a red fox, trying to find birds to hunt in a forest.</p>
+            <p>"Shotgun Showdown" was made with Godot Engine (4.3) and coded in GDscript. All assets are made by me (excluding audio and fonts).</p>
+          </div>
+          <a href="https://github.com/snipchu/shotgun_showdown"><Image src={shotdown} alt="A 3D pixel art video game screenshot containing with flapping birds and a crosshair."/></a>
+        </article>
+        <article id="nicksdayoff" class="flexbox">
+          <a href="https://github.com/snipchu/nicks-day-off"><Image src={nicksdayoff} alt="A pixel art video game screenshot with bunnyguy running in a lighted house."/></a>
+          <div>
+            <h2>nick's day off</h2>
+            <p>05 SEP 2024 -- 18 SEP 2024</p>
+            <p>A solo game made for my CS3 class. This project runs on Greenfoot, a Java development environment.</p>
+          </div>
+        </article>
       </section>
     </main>
     <Footer/>
