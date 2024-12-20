@@ -15,10 +15,13 @@ import stamp from '../assets/site/stamp.png';
 import hr from '../assets/site/hr.png';
 import border from '../assets/site/border.png';
 import buttonimg from '../assets/stamps/88x31_temp.png';
+import projects from '../assets/stamps/projects.png';
 import whoami from '../assets/stamps/whoami.png';
 import bunnyboard from '../assets/projects/bunnyboard.jpg';
-import shotdown from '../assets/projects/shotgun_showdown.png';
-import nicksdayoff from '../assets/projects/nicksdayoff.png';
+import shotdown from '../assets/projects/shotdown.gif';
+import nicksdayoff from '../assets/projects/nicksdayoff.gif';
+import bombgame from '../assets/projects/bombgame.gif';
+import htmlmp3 from '../assets/projects/htmlmp3.png';
 ---
 <html lang="en">
   <Head/>
@@ -35,26 +38,28 @@ import nicksdayoff from '../assets/projects/nicksdayoff.png';
           <h2>stamps</h2>
           <nav><ul id="stamplist">
             <li><a href="./about"><Image src={whoami} alt="whoami"/></a></li>
-            <li><a href="./projects"><Image src={buttonimg} alt="projects"/></a></li>
-            <li><a href="./gallery"><Image src={buttonimg} alt="gallery"/></a></li>
-            <li><a href="./tech"><Image src={buttonimg} alt="tech"/></a></li>
+              <li><a href="./projects"><Image src={projects} alt="projects"/></a></li>
+            <!--
+              <li><a href="./gallery"><Image src={buttonimg} alt="gallery"/></a></li>
+              <li><a href="./tech"><Image src={buttonimg} alt="tech"/></a></li>
+              -->
           </ul></nav>
         </aside>
         <article class="threeblocks">
           <h2><a href="">projects</a></h2>
           <a href="/projects#bunnyboard"><Image src={bunnyboard} alt="A custom stenograph keyboard."/></a>
           <div class="flexbox twoblocks">
-            <a href="/projects#nicksdayoff"><Image src={nicksdayoff} alt="A pixel art video game screenshot with bunnyguy running in a lighted house."/></a>
+            <a href="/projects#htmlmp3"><Image src={htmlmp3} alt="An mp3 player made with HTML,CSS,and JS, playing 'September' by Earth, Wing, and Fire."/></a>
             <a href="/projects#shotdown"><Image src={shotdown} alt="A 3D pixel art video game screenshot containing with flapping birds and a crosshair."/></a>
           </div>
         </article>
         <article class="threeblocks">
           <h2><a href="">projects</a></h2>
           <div class="flexbox twoblocks">
-            <a href=""><Image src={img2} alt="img2"/></a>
-            <a href=""><Image src={img3} alt="img3"/></a>
+            <a href="https://mhsroboboat.com/"><Image src={qbg} alt="A hand-sewn companion cube sits on top of a yellow canoe next to a body of water."/></a>
+            <a href="/projects#bombgame"><Image src={bombgame} alt="A mouse hovers over a ring appearing around a pixel art drawing of a bomb."/></a>
           </div>
-          <a href=""><Image src={qbg} alt="img1"/></a>
+          <a href="/projects#nicksdayoff"><Image src={nicksdayoff} alt="A pixel art video game screenshot with bunnyguy running in a lighted house."/></a>
         </article>
       </section>
     </main>

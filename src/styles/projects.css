@@ -16,13 +16,13 @@ h1 {text-align: center;}
   background-color: var(--tan);
   padding: .5rem; flex-direction: column;
 }
+#projectbox a {height: 10rem;}
 #projectbox div { order: 1; }
-#projectbox img {height: 10rem;}
 #projectbox a:hover {transform: rotate(.02rad);}
 
 @media screen and (min-width: 40rem) {
   #projectbox>article {flex-direction: row;}
-  #projectbox div { width: 60%; flex-shrink: 0; order: 0; }
-  #projectbox img {height: auto;}
+  #projectbox div {flex-shrink: 1; order: 0; }
+  #projectbox a {width: 35%; flex-shrink:0; flex-grow: 0;}
 }
 

@@ -11,8 +11,10 @@ import stamp from '../assets/site/stamp.png';
 import hr from '../assets/site/hr.png';
 import border from '../assets/site/border.png';
 import bunnyboard from '../assets/projects/bunnyboard.jpg';
-import nicksdayoff from '../assets/projects/nicksdayoff.png';
-import shotdown from '../assets/projects/shotgun_showdown.png';
+import nicksdayoff from '../assets/projects/nicksdayoff.gif';
+import shotdown from '../assets/projects/shotdown.gif';
+import htmlmp3 from '../assets/projects/htmlmp3.png';
+import bombgame from '../assets/projects/bombgame.gif';
 ---
 <html lang="en">
   <Head/>
@@ -22,7 +24,6 @@ import shotdown from '../assets/projects/shotgun_showdown.png';
     </a></header>
     <main>
       <h1>~/projects</h1>
-      <p>lorem ipsum</p>
       <section id="projectbox" class="flexbox">
         <article id="bunnyboard" class="flexbox">
           <a href="https://github.com/snipchu/bunnyboard/"><Image src={bunnyboard} alt="A custom stenograph keyboard."/></a>
@@ -49,6 +50,23 @@ import shotdown from '../assets/projects/shotgun_showdown.png';
             <h2>nick's day off</h2>
             <p>05 SEP 2024 -- 18 SEP 2024</p>
             <p>A solo game made for my CS3 class. This project runs on Greenfoot, a Java development environment.</p>
+          </div>
+        </article>
+        <article id="bombgame" class="flexbox">
+          <div>
+            <h2>bomb game</h2>
+            <p>10 AUG 2024 -- 04 SEP 2024</p>
+            <p>Experimental game made in Godot about a walking and talking bomb.</p>
+          </div>
+          <a href="https://github.com/snipchu/bomb-game"><Image src={bombgame} alt="A mouse hovers over a ring appearing around a pixel art drawing of a bomb."/></a>
+        </article>
+        <article id="htmlmp3" class="flexbox">
+          <a href="https://snipchu.neocities.org/websitev7/projects/mp3player/"><Image src={htmlmp3} alt="An mp3 player made with HTML,CSS,and JS, playing 'September' by Earth, Wing, and Fire."/></a>
+          <div>
+            <h2>html mp3 player</h2>
+            <p>11 JUL 2024 -- 13 JUL 2024</p>
+            <p>A small mp3 player made in HTML and JS. Includes basic functions like pause/play, looping, and shuffling.</p>
+            <p>view source code at <a href="https://github.com/snipchu/codefiles/tree/main/2024/7_11_24">github</a> or click on the picture for a live preview.</p>
           </div>
         </article>
       </section>
