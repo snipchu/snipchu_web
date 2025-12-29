@@ -1,6 +1,6 @@
 # neocities archive
 this repository contains previous versions of the personal website hosted on [snipchu.neocities.org](https://snipchu.neocities.org)  
-my new website can be found at [bunnyguy.foo](https://bunnyguy.foo) ([github](https://github.com/snipchu/bunnyguy.foo))
+my new website can be found at [sundial.city](https://sundial.city) ([github](https://github.com/autowattage/website))
 | Name | Date | ZIP install |
 |:--|:--|--:|
 | Version 1 | July 1, 2023 | [./archive/websitev1.zip](./archive/websitev1.zip) |
